@@ -50,6 +50,8 @@ function timeCount() {
 function startCount() {
     if (!timer)
         timeCount();
+        document.querySelector('')
+
 }
 //функция проверяет выражение timer по правилу лжи
 //Если оно истинно, то она вызывает метод clearTimeOut() для прекращения работы таймера
@@ -60,3 +62,4 @@ function stopCount() {
         timer=null;
     }
 }
+

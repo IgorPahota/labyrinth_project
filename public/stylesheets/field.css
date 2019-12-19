@@ -1,3 +1,6 @@
+body {
+    font-family: "American Typewriter";
+}
 .top-container {
     display: flex;
     flex-direction: row;
@@ -13,6 +16,8 @@
     height: 40px;
     border: black solid 1px;
     background-color: lightgray;
+    color: white;
+    padding: 1px;
 }
 
 .field-container {
@@ -20,7 +25,7 @@
     display: flex;
     justify-content: center;
     background-color: azure;
-    padding: 5% 0 5%;
+    padding: 2% 0 2%;
 }
 
 .bottom-container {
@@ -40,3 +45,27 @@
     display: flex;
     flex-direction: row;
 }
+
+input {
+    width: 80%;
+    font-size: 24px;
+}
+
+.powerBtn {
+    font-size: 18px;
+    width: 230px;
+    height: 50px;
+}
+
+ #countTime {
+     font-size: 20px;
+ }
+
+ #current_date_time_block2 {
+     font-size: 20px;
+ }
+
+ .constBtn {
+     height: 40px;
+     font-size: 14px;
+ }
