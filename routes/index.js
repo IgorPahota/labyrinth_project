@@ -20,7 +20,10 @@ router.get('/', async(req, res) => {
 router.post('/', async(req, res) => {
     // let test = await Lab.find({});
     //    console.log(test);
-    console.log(req.body.value);
+    // console.log(req.body.value);
+    let data = req.body.value;
+    let test = await Lab.find({field:req.body.value});
+    console.log(test);
     res.render('field')
 
 });
@@ -29,6 +32,10 @@ router.post('/', async(req, res) => {
 router.get('/field', (req, res) => {
     res.render('field')
 });
+
+router.post('/field', (req, res) => {
+    console.log(req)
+})
 router.get('/keyboard', (req, res) => {
     res.render('keyboard')
 });
