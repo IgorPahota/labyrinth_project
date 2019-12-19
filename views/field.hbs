@@ -118,7 +118,7 @@
                     <div class="wideBtn"><span class="ltb">y</span><span class="rbb">d</span></div><div class="smallBtn"><span class="ltb">k</span><span class="rbb">g</span></div>
                 </div>
             </div>
-            <div class="longBtn"><span>++</span><br /><span>a</span></div>
+            <div class="longBtn"><span>++</span><span>a</span></div>
         </div>
     </div>
 </div>
@@ -126,19 +126,19 @@
     <div id="current_date_time_block2"></div>
     <span id="countTime"></span>
     <br />
-    <a href="javascript:startCount()">3anycтить процесс</a>
+    <button class="powerBtn" onclick="startCount()">Начать эксперимент</button>
     <br />
-    <a href="javascript:stopCount()">Остановить процесс</a>
+    <button class="powerBtn" onclick="stopCount()">Остановить эксперимент</button>
     <br/>
     <label>
         <input class="actions" value="">
     </label>
     <div class="constBtns">
-        <button onclick="changeColor('lightgrey')">ПОЛЕ</button>
-        <button onclick="changeColor('darkblue')">СТЕНА</button>
-        <button onclick="changeColor('violet')">ЛОЖНАЯ КОРМУШКА</button>
-        <button onclick="changeColor('orange')">КОРМУШКА</button>
-        <button onclick="changeColor('green')">ВХОД</button>
-        <button onclick="changeColor('lightblue')">ВЫХОД</button>
+        <button class="constBtn" onclick="changeColor('lightgrey')">ПОЛЕ</button>
+        <button class="constBtn" onclick="changeColor('darkblue')">СТЕНА</button>
+        <button class="constBtn" onclick="changeColor('violet')">ЛОЖНАЯ КОРМУШКА</button>
+        <button class="constBtn" onclick="changeColor('orange')">КОРМУШКА</button>
+        <button class="constBtn" onclick="changeColor('green'); this.mouse = true">ВХОД</button>
+        <button class="constBtn" onclick="changeColor('lightblue')">ВЫХОД</button>
     </div>
 </div>

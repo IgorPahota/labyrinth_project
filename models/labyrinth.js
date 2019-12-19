@@ -10,7 +10,10 @@ const labSchema = new Schema({
                 {
                     id: {type: String, default: 'a1'},
                     color: {type: String, default: 'grey'},
-                    letter: String
+                    letter: String,
+                    mouse: {type: Boolean, default: false},
+                    column: {type: Number, default: 1},
+                    row: {type: Number, default: 1}
                 },
                 {
                     id: {type: String, default: 'a2'},

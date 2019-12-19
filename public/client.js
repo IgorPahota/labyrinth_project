@@ -10,11 +10,11 @@ let clickCount = 0;
 
 document.querySelector('.keyboard').addEventListener('click', function(event) {
     function singleClick() {
-        console.log(event.target.parentElement.firstChild.innerText);
+        document.querySelector('.actions').value += event.target.parentElement.firstChild.innerText;
     }
 
     function doubleClick() {
-        console.log(event.target.parentElement.lastChild.innerText);
+        document.querySelector('.actions').value += event.target.parentElement.lastChild.innerText;
     }
     clickCount++;
     if (clickCount === 1) {
@@ -27,7 +27,7 @@ document.querySelector('.keyboard').addEventListener('click', function(event) {
         clickCount = 0;
         doubleClick();
     }
-})
+});
 
 let color = 'lightgrey';
 
