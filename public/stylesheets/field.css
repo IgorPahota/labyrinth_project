@@ -26,3 +26,17 @@
 .bottom-container {
     background-color: cornsilk;
 }
+
+.constBtns {
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
