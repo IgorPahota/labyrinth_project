@@ -1,7 +1,7 @@
 document.querySelector('.field').addEventListener('click', async (event) => {
     event.preventDefault();
     event.stopPropagation();
-    console.log(event.target)
+    console.log(event.target.innerText)
 });
 
 
@@ -29,36 +29,10 @@ document.querySelector('.keyboard').addEventListener('click', function(event) {
     }
 })
 
+let color = 'lightgrey';
 
-
-// addEventListener('dblclick', async (event) => {
-//     event.preventDefault();
-//     event.stopPropagation();
-//     console.log(event.target.parentElement.lastChild.innerText)
-    // const response = await fetch('/field', {
-    //     method: "POST",
-    //     headers: {'Content-type': 'application/json'},
-    //     body: JSON.stringify({})
-    // })
-// })
-
-// document.querySelector('.keyboard').removeEventListener('dblclick', () => {})
-//
-// document.querySelector('.keyboard').addEventListener('click', async (event) => {
-//     event.preventDefault();
-//     event.stopPropagation();
-//     console.log(event.target.parentElement.firstChild.innerText)
-    // const response = await fetch('/field', {
-    //     method: "POST",
-    //     headers: {'Content-type': 'application/json'},
-    //     body: JSON.stringify({})
-    // })
-// })
-
-
-
-
-
-
-
+function changeColor(newColor) {
+    color = newColor;
+    console.log(color)
+}
 
