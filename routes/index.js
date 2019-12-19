@@ -9,6 +9,10 @@ router.get('/', (req, res) => {
 router.get('/field', (req, res) => {
     res.render('field')
 });
+
+router.post('/field', (req, res) => {
+    console.log(req)
+})
 router.get('/keyboard', (req, res) => {
     res.render('keyboard')
 });
