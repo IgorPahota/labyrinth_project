@@ -1,7 +1,6 @@
 document.querySelector('.field').addEventListener('click', async (event) => {
     event.preventDefault();
     event.stopPropagation();
-
     console.log(event.target.id);
     const response = await fetch('/', {
         method: 'POST',
@@ -12,6 +11,10 @@ document.querySelector('.field').addEventListener('click', async (event) => {
 
 
     console.log(event.target)
+
+    console.log(event.target.innerText)
+
+
 
 });
 
@@ -38,7 +41,8 @@ document.querySelector('.keyboard').addEventListener('click', function (event) {
         clickCount = 0;
         doubleClick();
     }
-});
+
+})
 
 
 // addEventListener('dblclick', async (event) => {
@@ -70,5 +74,14 @@ document.querySelector('.keyboard').addEventListener('click', function (event) {
 
 
 
+
+
+
+let color = 'lightgrey';
+
+function changeColor(newColor) {
+    color = newColor;
+    console.log(color)
+}
 
 
