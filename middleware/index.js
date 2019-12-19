@@ -3,6 +3,9 @@ module.exports = function(app) {
     const morgan = require("morgan");
     const path = require("path");
     const dbConnection = require("./db-connect");
+    const Handlebars = require('handlebars')
+
+    Handlebars.registerPartial("myPartial", "{{keyboard}}");
 
     app.use(morgan("dev"));
 
