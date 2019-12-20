@@ -1,6 +1,11 @@
 body {
     font-family: "American Typewriter";
 }
+
+.btn:hover {
+    cursor: pointer;
+}
+
 .top-container {
     display: flex;
     flex-direction: row;
@@ -11,11 +16,15 @@ body {
     display: inline-flex;
 }
 
+.field:hover {
+    cursor: pointer;
+}
+
 .cell {
     width: 40px;
     height: 40px;
     border: black solid 1px;
-    background-color: lightgray;
+    /*background-color: lightgray;*/
     color: white;
     padding: 1px;
 }
