@@ -5,6 +5,7 @@
     background-color: beige;
     padding: 5%;
 }
+
 .smallBtn {
     width: 50px;
     height: 50px;
@@ -60,6 +61,7 @@
     box-sizing: border-box;
     background-color: lightgray;
 }
+
 .keyboard:hover {
     cursor: pointer;
 }
@@ -74,4 +76,28 @@
     justify-content: flex-end;
     padding-right: 10px;
     padding-bottom: 7px;
+}
+
+.wltb {
+    height: 50%;
+    padding-left: 15px;
+}
+
+.wrbb {
+    height: 50%;
+    padding-left: 70px;
+}
+
+.lltb {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.lrbb {
+    height: 50%;
+    width: 100%;
+    text-align: center;
 }
