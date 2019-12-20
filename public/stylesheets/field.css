@@ -56,8 +56,8 @@ body {
 }
 
 input {
-    width: 80%;
-    font-size: 24px;
+    width: 100%;
+    font-size: 18px;
 }
 
 .powerBtn {
@@ -66,15 +66,15 @@ input {
     height: 50px;
 }
 
- #countTime {
-     font-size: 20px;
- }
+#countTime {
+    font-size: 20px;
+}
 
- #current_date_time_block2 {
-     font-size: 20px;
- }
+#current_date_time_block2 {
+    font-size: 20px;
+}
 
- .constBtn {
-     height: 40px;
-     font-size: 14px;
- }
+.constBtn {
+    height: 40px;
+    font-size: 14px;
+}

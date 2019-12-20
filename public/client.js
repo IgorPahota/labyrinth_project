@@ -28,7 +28,7 @@ document.querySelector('.keyboard').addEventListener('click', function (event) {
         clearTimeout(singleClickTimer);
         clickCount = 0;
 
-        
+
         doubleClick();
     }
 });
@@ -37,7 +37,7 @@ let color = 'grey';
 
 function changeColor(newColor) {
     color = newColor;
-}
+};
 
 function colorClick(element, newColor) {
     newColor = color;
@@ -46,7 +46,7 @@ function colorClick(element, newColor) {
     if (newColor === 'green') {
         element.setAttribute("dataMouse", true)
     }
-}
+};
 
 document.addEventListener('keydown', (e) => {
     let mouse = document.querySelector('[dataMouse=true]');
@@ -114,5 +114,5 @@ document.addEventListener('keydown', (e) => {
             nextCell.style.backgroundColor = 'black';
             break;
     }
-})
+});
 

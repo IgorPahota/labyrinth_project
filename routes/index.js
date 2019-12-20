@@ -7,23 +7,8 @@ router.get('/', (req, res) => {
     res.render('field')
 });
 
-// router.get('/field', (req, res) => {
-//     res.render('field')
-// });
-
-router.get('/keyboard', (req, res) => {
-    res.render('keyboard')
-});
-
 router.get('/field', async (req, res) => {
     let test = await Lab.find({});
-    console.log(test[0].field[0][0].id.default);
-    // let newField = [];
-    // for (let i = 0; i < test[0].length; i++) {
-    //     newField.push(test[0].field[i])
-    // }
-    // console.log(newField);
-    let value = test[0].field;
     let a = test[0].field[0],
         b = test[0].field[1],
         c = test[0].field[2],
