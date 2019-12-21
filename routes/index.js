@@ -4,7 +4,11 @@ const Lab = require('../models/labyrinth');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.render('field')
+    let testField = new Lab ({
+        name: 'testing'
+    });
+    testField.save();
+    res.send('seed done')
 });
 
 router.get('/field', async (req, res) => {

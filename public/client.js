@@ -1,10 +1,3 @@
-document.querySelector('.field').addEventListener('click', async (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-    console.log(event.target.innerText)
-});
-
-
 let clickCount = 0;
 
 document.querySelector('.keyboard').addEventListener('click', function (event) {
@@ -48,71 +41,71 @@ function colorClick(element, newColor) {
     }
 };
 
-document.addEventListener('keydown', (e) => {
-    let mouse = document.querySelector('[dataMouse=true]');
-    let prevColor = mouse.attributes.dataColor.value;
-    mouse.style.backgroundColor = 'black';
-    let moveColumn;
-    let moveRow;
-    let nextCell;
-    switch (e.key) {
-        case 'ArrowDown':
-            mouse.style.backgroundColor = prevColor;
-            document.querySelector('.actions').value += mouse.innerHTML + '-';
-            document.querySelector('.actions').value += count + ',';
-            moveColumn = mouse.attributes.dataColumn.value;
-            moveRow = Number(mouse.attributes.dataRow.value) + 1;
-            mouse.setAttribute('dataMouse', 'false');
-
-            console.log(moveRow);
-            console.log(moveColumn);
-            nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
-            nextCell.setAttribute('dataMouse', true);
-            nextCell.style.backgroundColor = 'black';
-            break;
-        case 'ArrowUp':
-            mouse.style.backgroundColor = prevColor;
-            document.querySelector('.actions').value += mouse.innerHTML + '-';
-            document.querySelector('.actions').value += count + ',';
-            moveColumn = mouse.attributes.dataColumn.value;
-            moveRow = mouse.attributes.dataRow.value - 1;
-            mouse.setAttribute('dataMouse', 'false');
-
-            console.log(moveRow);
-            console.log(moveColumn);
-            nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
-            nextCell.setAttribute('dataMouse', true);
-            nextCell.style.backgroundColor = 'black';
-            break;
-        case 'ArrowLeft':
-            console.log(e.key)
-            mouse.style.backgroundColor = prevColor;
-            document.querySelector('.actions').value += mouse.innerHTML + '-';
-            document.querySelector('.actions').value += count + ',';
-            moveColumn = mouse.attributes.dataColumn.value - 1;
-            moveRow = mouse.attributes.dataRow.value;
-            mouse.setAttribute('dataMouse', 'false');
-
-            console.log(moveRow);
-            console.log(moveColumn);
-            nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
-            nextCell.setAttribute('dataMouse', true);
-            nextCell.style.backgroundColor = 'black';
-            break;
-        case 'ArrowRight':
-            mouse.style.backgroundColor = prevColor;
-            document.querySelector('.actions').value += mouse.innerHTML + '-';
-            document.querySelector('.actions').value += count + ',';
-            moveColumn = Number(mouse.attributes.dataColumn.value) + 1;
-            moveRow = mouse.attributes.dataRow.value;
-            mouse.setAttribute('dataMouse', 'false');
-
-            console.log(moveRow);
-            console.log(moveColumn);
-            nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
-            nextCell.setAttribute('dataMouse', true);
-            nextCell.style.backgroundColor = 'black';
-            break;
-    }
-});
+// document.addEventListener('keydown', (e) => {
+//     let mouse = document.querySelector('[dataMouse=true]');
+//     let prevColor = mouse.attributes.dataColor.value;
+//     mouse.style.backgroundColor = 'black';
+//     let moveColumn;
+//     let moveRow;
+//     let nextCell;
+//     switch (e.key) {
+//         case 'ArrowDown':
+//             mouse.style.backgroundColor = prevColor;
+//             document.querySelector('.actions').value += mouse.innerHTML + '-';
+//             document.querySelector('.actions').value += count + ',';
+//             moveColumn = mouse.attributes.dataColumn.value;
+//             moveRow = Number(mouse.attributes.dataRow.value) + 1;
+//             mouse.setAttribute('dataMouse', 'false');
+//
+//             console.log(moveRow);
+//             console.log(moveColumn);
+//             nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
+//             nextCell.setAttribute('dataMouse', true);
+//             nextCell.style.backgroundColor = 'black';
+//             break;
+//         case 'ArrowUp':
+//             mouse.style.backgroundColor = prevColor;
+//             document.querySelector('.actions').value += mouse.innerHTML + '-';
+//             document.querySelector('.actions').value += count + ',';
+//             moveColumn = mouse.attributes.dataColumn.value;
+//             moveRow = mouse.attributes.dataRow.value - 1;
+//             mouse.setAttribute('dataMouse', 'false');
+//
+//             console.log(moveRow);
+//             console.log(moveColumn);
+//             nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
+//             nextCell.setAttribute('dataMouse', true);
+//             nextCell.style.backgroundColor = 'black';
+//             break;
+//         case 'ArrowLeft':
+//             console.log(e.key)
+//             mouse.style.backgroundColor = prevColor;
+//             document.querySelector('.actions').value += mouse.innerHTML + '-';
+//             document.querySelector('.actions').value += count + ',';
+//             moveColumn = mouse.attributes.dataColumn.value - 1;
+//             moveRow = mouse.attributes.dataRow.value;
+//             mouse.setAttribute('dataMouse', 'false');
+//
+//             console.log(moveRow);
+//             console.log(moveColumn);
+//             nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
+//             nextCell.setAttribute('dataMouse', true);
+//             nextCell.style.backgroundColor = 'black';
+//             break;
+//         case 'ArrowRight':
+//             mouse.style.backgroundColor = prevColor;
+//             document.querySelector('.actions').value += mouse.innerHTML + '-';
+//             document.querySelector('.actions').value += count + ',';
+//             moveColumn = Number(mouse.attributes.dataColumn.value) + 1;
+//             moveRow = mouse.attributes.dataRow.value;
+//             mouse.setAttribute('dataMouse', 'false');
+//
+//             console.log(moveRow);
+//             console.log(moveColumn);
+//             nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
+//             nextCell.setAttribute('dataMouse', true);
+//             nextCell.style.backgroundColor = 'black';
+//             break;
+//     }
+// });
 
