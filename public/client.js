@@ -52,7 +52,7 @@ document.addEventListener('keydown', (e) => {
     let nextCell;
     switch (e.key) {
         case 'ArrowDown':
-            if (mouse.attributes.dataRow.value < 11) {
+            if (mouse.attributes.dataRow.value < 11 && (document.querySelector(`div[dataRow="${Number(mouse.attributes.dataRow.value) + 1}"][dataColumn="${mouse.attributes.dataColumn.value}"]`)).style.backgroundColor !== 'darkblue') {
             mouse.style.backgroundColor = prevColor;
             document.querySelector('.actions').value += mouse.innerHTML + '-';
             document.querySelector('.actions').value += count + ',';
@@ -65,7 +65,7 @@ document.addEventListener('keydown', (e) => {
             nextCell.style.backgroundColor = 'black';
             break;} else {break}
         case 'ArrowUp':
-            if (mouse.attributes.dataRow.value > 1) {
+            if (mouse.attributes.dataRow.value > 1 && (document.querySelector(`div[dataRow="${mouse.attributes.dataRow.value - 1}"][dataColumn="${mouse.attributes.dataColumn.value}"]`)).style.backgroundColor !== 'darkblue') {
             mouse.style.backgroundColor = prevColor;
             document.querySelector('.actions').value += mouse.innerHTML + '-';
             document.querySelector('.actions').value += count + ',';
@@ -78,7 +78,7 @@ document.addEventListener('keydown', (e) => {
             nextCell.style.backgroundColor = 'black';
             break;} else {break}
         case 'ArrowLeft':
-            if (mouse.attributes.dataColumn.value > 1) {
+            if (mouse.attributes.dataColumn.value > 1 && (document.querySelector(`div[dataRow="${mouse.attributes.dataRow.value}"][dataColumn="${mouse.attributes.dataColumn.value - 1}"]`)).style.backgroundColor !== 'darkblue') {
             console.log(e.key)
             mouse.style.backgroundColor = prevColor;
             document.querySelector('.actions').value += mouse.innerHTML + '-';
@@ -92,14 +92,14 @@ document.addEventListener('keydown', (e) => {
             nextCell.style.backgroundColor = 'black';
             break;} else {break}
         case 'ArrowRight':
-            if (mouse.attributes.dataColumn.value < 11) {
+            if (mouse.attributes.dataColumn.value < 11 && (document.querySelector(`div[dataRow="${mouse.attributes.dataRow.value}"][dataColumn="${Number(mouse.attributes.dataColumn.value) + 1}"]`)).style.backgroundColor !== 'darkblue') {
             mouse.style.backgroundColor = prevColor;
             document.querySelector('.actions').value += mouse.innerHTML + '-';
             document.querySelector('.actions').value += count + ',';
             moveColumn = Number(mouse.attributes.dataColumn.value) + 1;
             moveRow = mouse.attributes.dataRow.value;
             mouse.setAttribute('dataMouse', 'false');
-            
+
             nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
             nextCell.setAttribute('dataMouse', true);
             nextCell.style.backgroundColor = 'black';
