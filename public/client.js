@@ -1,10 +1,3 @@
-document.querySelector('.field').addEventListener('click', async (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-    console.log(event.target.innerText)
-});
-
-
 let clickCount = 0;
 
 document.querySelector('.keyboard').addEventListener('click', function (event) {
