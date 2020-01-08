@@ -2,11 +2,13 @@ let clickCount = 0;
 
 document.querySelector('.keyboard').addEventListener('click', function (event) {
     function singleClick() {
+        console.log(event.target.parentElement.firstChild)
         document.querySelector('.actions').value += event.target.parentElement.firstChild.innerText + '-';
         document.querySelector('.actions').value += count + ','
     }
 
     function doubleClick() {
+        console.log(event.target.parentElement.lastChild)
         document.querySelector('.actions').value += event.target.parentElement.lastChild.innerText + '-';
         document.querySelector('.actions').value += count + ','
     }
@@ -50,6 +52,7 @@ document.addEventListener('keydown', (e) => {
     let nextCell;
     switch (e.key) {
         case 'ArrowDown':
+            if (mouse.attributes.dataRow.value < 11 && (document.querySelector(`div[dataRow="${Number(mouse.attributes.dataRow.value) + 1}"][dataColumn="${mouse.attributes.dataColumn.value}"]`)).style.backgroundColor !== 'darkblue') {
             mouse.style.backgroundColor = prevColor;
             document.querySelector('.actions').value += mouse.innerHTML + '-';
             document.querySelector('.actions').value += count + ',';
@@ -57,13 +60,12 @@ document.addEventListener('keydown', (e) => {
             moveRow = Number(mouse.attributes.dataRow.value) + 1;
             mouse.setAttribute('dataMouse', 'false');
 
-            console.log(moveRow);
-            console.log(moveColumn);
             nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
             nextCell.setAttribute('dataMouse', true);
             nextCell.style.backgroundColor = 'black';
-            break;
+            break;} else {break}
         case 'ArrowUp':
+            if (mouse.attributes.dataRow.value > 1 && (document.querySelector(`div[dataRow="${mouse.attributes.dataRow.value - 1}"][dataColumn="${mouse.attributes.dataColumn.value}"]`)).style.backgroundColor !== 'darkblue') {
             mouse.style.backgroundColor = prevColor;
             document.querySelector('.actions').value += mouse.innerHTML + '-';
             document.querySelector('.actions').value += count + ',';
@@ -71,13 +73,12 @@ document.addEventListener('keydown', (e) => {
             moveRow = mouse.attributes.dataRow.value - 1;
             mouse.setAttribute('dataMouse', 'false');
 
-            console.log(moveRow);
-            console.log(moveColumn);
             nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
             nextCell.setAttribute('dataMouse', true);
             nextCell.style.backgroundColor = 'black';
-            break;
+            break;} else {break}
         case 'ArrowLeft':
+            if (mouse.attributes.dataColumn.value > 1 && (document.querySelector(`div[dataRow="${mouse.attributes.dataRow.value}"][dataColumn="${mouse.attributes.dataColumn.value - 1}"]`)).style.backgroundColor !== 'darkblue') {
             console.log(e.key)
             mouse.style.backgroundColor = prevColor;
             document.querySelector('.actions').value += mouse.innerHTML + '-';
@@ -86,13 +87,12 @@ document.addEventListener('keydown', (e) => {
             moveRow = mouse.attributes.dataRow.value;
             mouse.setAttribute('dataMouse', 'false');
 
-            console.log(moveRow);
-            console.log(moveColumn);
             nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
             nextCell.setAttribute('dataMouse', true);
             nextCell.style.backgroundColor = 'black';
-            break;
+            break;} else {break}
         case 'ArrowRight':
+            if (mouse.attributes.dataColumn.value < 11 && (document.querySelector(`div[dataRow="${mouse.attributes.dataRow.value}"][dataColumn="${Number(mouse.attributes.dataColumn.value) + 1}"]`)).style.backgroundColor !== 'darkblue') {
             mouse.style.backgroundColor = prevColor;
             document.querySelector('.actions').value += mouse.innerHTML + '-';
             document.querySelector('.actions').value += count + ',';
@@ -100,12 +100,10 @@ document.addEventListener('keydown', (e) => {
             moveRow = mouse.attributes.dataRow.value;
             mouse.setAttribute('dataMouse', 'false');
 
-            console.log(moveRow);
-            console.log(moveColumn);
             nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
             nextCell.setAttribute('dataMouse', true);
             nextCell.style.backgroundColor = 'black';
-            break;
+            break;} else {break}
     }
 });
 
