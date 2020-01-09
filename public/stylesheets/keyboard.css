@@ -2,7 +2,7 @@
     width: 40%;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: whitesmoke;
     padding: 5%;
     flex-direction: column;
 }
@@ -63,6 +63,7 @@
     background-color: lightgray;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin: auto;
+    font-family: arial;
 }
 
 .keyboard:hover {
@@ -108,12 +109,12 @@
 #deleteButton {
     width: 150px;
     height: 50px;
-    background-color: indianred;
-    color: whitesmoke;
+    background-color: lightgray;
     margin: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     text-align: center;
     padding-top: 30px;
+    border: black solid 1px;
     border-radius: 5px;
 }
 
@@ -122,5 +123,5 @@
 }
 
 #deleteButton:active {
-    background-color: darkred;
+    background-color: gray;
 }
