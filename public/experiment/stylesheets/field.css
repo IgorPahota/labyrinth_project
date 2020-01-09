@@ -1,0 +1,85 @@
+body {
+    font-family: "American Typewriter";
+    background-color: beige;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.field {
+    display: inline-flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+.field:hover {
+    cursor: pointer;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: black solid 1px;
+    color: white;
+    padding: 1px;
+}
+
+.field-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 2% 0 2%;
+}
+
+.bottom-container {
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
+.constBtns .btn{
+    background-color: lightgray;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    margin:5px 0;
+    width: 95%;
+    font-size: 18px;
+}
+
+.powerBtn {
+    font-size: 18px;
+    width: 230px;
+    height: 50px;
+}
+
+#countTime {
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+#current_date_time_block2 {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.constBtn {
+    height: 40px;
+    font-size: 14px;
+}
