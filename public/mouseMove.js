@@ -10,8 +10,7 @@ document.addEventListener('keydown', (e) => {
             if (mouse.attributes.dataRow.value < 11 && (document.querySelector(`div[dataRow="${Number(mouse.attributes.dataRow.value) + 1}"][dataColumn="${mouse.attributes.dataColumn.value}"]`)).style.backgroundColor !== 'darkblue') {
                 event.preventDefault();
                 mouse.style.backgroundColor = prevColor;
-                document.querySelector('.actions').value += mouse.innerHTML + '-';
-                document.querySelector('.actions').value += count + ',';
+                document.querySelector('.actions').value += mouse.innerHTML;
                 moveColumn = mouse.attributes.dataColumn.value;
                 moveRow = Number(mouse.attributes.dataRow.value) + 1;
                 mouse.setAttribute('dataMouse', 'false');
@@ -27,8 +26,7 @@ document.addEventListener('keydown', (e) => {
             if (mouse.attributes.dataRow.value > 1 && (document.querySelector(`div[dataRow="${mouse.attributes.dataRow.value - 1}"][dataColumn="${mouse.attributes.dataColumn.value}"]`)).style.backgroundColor !== 'darkblue') {
                 event.preventDefault();
                 mouse.style.backgroundColor = prevColor;
-                document.querySelector('.actions').value += mouse.innerHTML + '-';
-                document.querySelector('.actions').value += count + ',';
+                document.querySelector('.actions').value += mouse.innerHTML;
                 moveColumn = mouse.attributes.dataColumn.value;
                 moveRow = mouse.attributes.dataRow.value - 1;
                 mouse.setAttribute('dataMouse', 'false');
@@ -43,8 +41,7 @@ document.addEventListener('keydown', (e) => {
         case 'ArrowLeft':
             if (mouse.attributes.dataColumn.value > 1 && (document.querySelector(`div[dataRow="${mouse.attributes.dataRow.value}"][dataColumn="${mouse.attributes.dataColumn.value - 1}"]`)).style.backgroundColor !== 'darkblue') {
                 mouse.style.backgroundColor = prevColor;
-                document.querySelector('.actions').value += mouse.innerHTML + '-';
-                document.querySelector('.actions').value += count + ',';
+                document.querySelector('.actions').value += mouse.innerHTML;
                 moveColumn = mouse.attributes.dataColumn.value - 1;
                 moveRow = mouse.attributes.dataRow.value;
                 mouse.setAttribute('dataMouse', 'false');
@@ -59,8 +56,7 @@ document.addEventListener('keydown', (e) => {
         case 'ArrowRight':
             if (mouse.attributes.dataColumn.value < 11 && (document.querySelector(`div[dataRow="${mouse.attributes.dataRow.value}"][dataColumn="${Number(mouse.attributes.dataColumn.value) + 1}"]`)).style.backgroundColor !== 'darkblue') {
                 mouse.style.backgroundColor = prevColor;
-                document.querySelector('.actions').value += mouse.innerHTML + '-';
-                document.querySelector('.actions').value += count + ',';
+                document.querySelector('.actions').value += mouse.innerHTML;
                 moveColumn = Number(mouse.attributes.dataColumn.value) + 1;
                 moveRow = mouse.attributes.dataRow.value;
                 mouse.setAttribute('dataMouse', 'false');
