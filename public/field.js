@@ -1,0 +1,35 @@
+
+let color = 'lightgrey';
+let positionChecker = false;
+
+function positionStart() {
+    if (!document.querySelector('[dataMouse=true]')) {
+        positionChecker = true;
+        console.log('positionChecker = true')
+    }
+}
+
+document.querySelector(".field").addEventListener('click', function (event) {
+    if (positionChecker) {
+        let element = event.target;
+        element.setAttribute("dataMouse", true)
+        element.style.backgroundColor = 'black';
+        positionChecker = false;
+    }
+})
+
+
+function changeColor(element, newColor) {
+    color = newColor;
+    let buttons = document.getElementsByClassName('constBtn');
+    for (i = 0; i < buttons.length; i++) {
+        buttons[i].style.backgroundColor = 'lightgrey';
+    }
+    element.style.backgroundColor = newColor;
+};
+
+function colorClick(element, newColor) {
+    newColor = color;
+    element.setAttribute("dataColor", newColor);
+    element.style.backgroundColor = newColor;
+};
