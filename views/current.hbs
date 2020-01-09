@@ -1,0 +1,148 @@
+<div class="top-container">
+    <div class="field-container">
+        <div class="field">
+            <div id='111' class="row">
+                <div id="1" class="column">
+                    {{#each a}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}">{{this.id}}</div>
+                    {{/each}}
+                </div>
+                <div id="2" class="column">
+                    {{#each b}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}">{{this.id}}</div>
+                    {{/each}}
+                </div>
+                <div id="3" class="column">
+                    {{#each c}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}">{{this.id}}</div>
+                    {{/each}}
+                </div>
+                <div id="4" class="column">
+                    {{#each d}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}">{{this.id}}</div>
+                    {{/each}}
+                </div>
+                <div id="5" class="column">
+                    {{#each e}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}">{{this.id}}</div>
+                    {{/each}}
+                </div>
+                <div id="6" class="column">
+                    {{#each f}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}">{{this.id}}</div>
+                    {{/each}}
+                </div>
+                <div id="7" class="column">
+                    {{#each g}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}">{{this.id}}</div>
+                    {{/each}}
+                </div>
+                <div id="8" class="column">
+                    {{#each h}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}">{{this.id}}</div>
+                    {{/each}}
+                </div>
+                <div id="9" class="column">
+                    {{#each i}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}">{{this.id}}</div>
+
+                    {{/each}}
+                </div>
+                <div id="10" class="column">
+                    {{#each j}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}">{{this.id}}</div>
+                    {{/each}}
+                </div>
+                <div id="11" class="column">
+                    {{#each k}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}">{{this.id}}</div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="keyboard-container">
+        <div class="keyboard">
+            <div class="leftBtns">
+                <div class="smallBtnFld">
+                    <div class="btnRow">
+                        <div class="smallBtn"><span class="ltb">t</span><span class="rbb">?</span></div>
+                        <div class="smallBtn"><span class="ltb">h</span><span class="rbb">_</span></div>
+                        <div class="smallBtn"><span class="ltb">o</span><span class="rbb">i</span></div>
+                    </div>
+                    <div class="btnRow">
+                        <div class="smallBtn"><span class="ltb">j</span><span class="rbb">q</span></div>
+                        <div class="smallBtn"><span class="ltb">╎</span><span class="rbb">b</span></div>
+                        <div class="smallBtn"><span class="ltb">s</span><span class="rbb">l</span></div>
+                    </div>
+                    <div class="btnRow">
+                        <div class="smallBtn"><span class="ltb">e</span><span class="rbb">x</span></div>
+                        <div class="smallBtn"><span class="ltb">w</span><span class="rbb">z</span></div>
+                        <div class="smallBtn"><span class="ltb">r</span><span class="rbb">m</span></div>
+                    </div>
+                </div>
+                <div class="btnRow">
+                    <div class="wideBtn"><div class="wltb">y</div><div class="wrbb">d</div></div>
+                    <div class="smallBtn"><span class="ltb">k</span><span class="rbb">g</span></div>
+                </div>
+            </div>
+            <div class="longBtn"><div class="lltb">++</div><div class="lrbb">a</div></div>
+        </div>
+    </div>
+</div>
+<div class="bottom-container">
+    <div id="current_date_time_block2"></div>
+    <span style="padding-left: 15px">Время эксперимента: </span><span id="countTime"></span>
+    <br/>
+    <button id="start-experiment" class="powerBtn btn" onclick="startCount();startExperiment()">Начать эксперимент</button>
+    <br/>
+    <button class="powerBtn btn" onclick="stopCount()">Остановить эксперимент</button>
+    <br/>
+    <button class="powerBtn btn" onclick="savePattern()">Сохранить шаблон</button>
+    <br/>
+    <label>
+        <input class="actions" value="">
+    </label>
+    <div class="constBtns">
+        <button class="constBtn btn" onclick="changeColor(this, 'lightgrey')">ПОЛЕ</button>
+        <button class="constBtn btn" onclick="changeColor(this, 'darkblue')">СТЕНА</button>
+        <button class="constBtn btn" onclick="changeColor(this, 'violet')">ЛОЖНАЯ КОРМУШКА</button>
+        <button class="constBtn btn" onclick="changeColor(this, 'orange')">КОРМУШКА</button>
+        <button class="constBtn btn" onclick="changeColor(this, 'green')">ВХОД</button>
+        <button class="constBtn btn" onclick="changeColor(this, 'lightblue')">ВЫХОД</button>
+        <button class="constBtn btn" onclick="positionStart()">НАЧАЛЬНАЯ ПОЗИЦИЯ</button>
+    </div>
+</div>

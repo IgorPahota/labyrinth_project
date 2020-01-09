@@ -9,8 +9,8 @@
 <div class="top-container">
     <div class="field-container">
         <div class="field">
-            <div class="row">
-                <div class="column">
+            <div id='111' class="row">
+                <div id="1" class="column">
                     {{#each a}}
                         <div class="cell" onmousedown="colorClick(this)"
                              onselectstart="return false" onmousedown="return false"
@@ -19,7 +19,7 @@
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
-                <div class="column">
+                <div id="2" class="column">
                     {{#each b}}
                         <div class="cell" onmousedown="colorClick(this)"
                              onselectstart="return false"
@@ -28,7 +28,7 @@
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
-                <div class="column">
+                <div id="3" class="column">
                     {{#each c}}
                         <div class="cell" onmousedown="colorClick(this)"
                              onselectstart="return false"
@@ -37,7 +37,7 @@
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
-                <div class="column">
+                <div id="4" class="column">
                     {{#each d}}
                         <div class="cell" onmousedown="colorClick(this)"
                              onselectstart="return false"
@@ -46,7 +46,7 @@
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
-                <div class="column">
+                <div id="5" class="column">
                     {{#each e}}
                         <div class="cell" onmousedown="colorClick(this)"
                              onselectstart="return false"
@@ -55,7 +55,7 @@
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
-                <div class="column">
+                <div id="6" class="column">
                     {{#each f}}
                         <div class="cell" onmousedown="colorClick(this)"
                              onselectstart="return false"
@@ -64,7 +64,7 @@
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
-                <div class="column">
+                <div id="7" class="column">
                     {{#each g}}
                         <div class="cell" onmousedown="colorClick(this)"
                              onselectstart="return false"
@@ -73,7 +73,7 @@
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
-                <div class="column">
+                <div id="8" class="column">
                     {{#each h}}
                         <div class="cell" onmousedown="colorClick(this)"
                              onselectstart="return false"
@@ -82,7 +82,7 @@
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
-                <div class="column">
+                <div id="9" class="column">
                     {{#each i}}
                         <div class="cell" onmousedown="colorClick(this)"
                              onselectstart="return false"
@@ -92,7 +92,7 @@
 
                     {{/each}}
                 </div>
-                <div class="column">
+                <div id="10" class="column">
                     {{#each j}}
                         <div class="cell" onmousedown="colorClick(this)"
                              onselectstart="return false"
@@ -101,7 +101,7 @@
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
-                <div class="column">
+                <div id="11" class="column">
                     {{#each k}}
                         <div class="cell" onmousedown="colorClick(this)"
                              onselectstart="return false"
@@ -148,6 +148,7 @@
 
     <span style="padding-left: 15px">Время эксперимента: </span><span id="countTime"></span>
     <br/>
+
     <div class="btnContainer">
         <div>
             <button class="powerBtn btn" onclick="startCount()" style="margin-top: 10px">Начать эксперимент</button>

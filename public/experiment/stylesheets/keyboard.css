@@ -1,0 +1,116 @@
+.keyboard-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 5%;
+    flex-direction: column;
+}
+
+.smallBtn {
+    width: 50px;
+    height: 50px;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.smallBtn:active {
+    background-color: gray;
+}
+
+.wideBtn {
+    width: 102px;
+    height: 50px;
+    border: black solid 1px;
+}
+
+.wideBtn:active {
+    background-color: gray;
+}
+
+.longBtn {
+    width: 55px;
+    height: 206px;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.longBtn:active {
+    background-color: gray;
+}
+
+.btnRow {
+    display: inline-flex;
+}
+
+.smallBtnFld {
+    display: flex;
+    flex-direction: column;
+    z-index: 2000;
+}
+
+.keyboard {
+    font-size: 20px;
+    height: 208px;
+    width: 213px;
+    display: inline-flex;
+    box-sizing: border-box;
+    background-color: lightgray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: auto;
+}
+
+.keyboard:hover {
+    cursor: pointer;
+}
+
+.ltb {
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+.rbb {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-bottom: 7px;
+}
+
+.wltb {
+    height: 50%;
+    padding-left: 15px;
+}
+
+.wrbb {
+    height: 50%;
+    padding-left: 70px;
+}
+
+.lltb {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.lrbb {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+#currentColor {
+    width: 150px;
+    height: 50px;
+    background-color: lightgray;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+    padding-top: 30px;
+}
