@@ -1,7 +1,7 @@
 #header {
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: whitesmoke;
     padding: 15px;
 }
 
@@ -22,8 +22,8 @@
 }
 
 body {
-    font-family: "American Typewriter";
-    background-color: beige;
+    font-family: Arial;
+    background-color: seashell;
 }
 
 .btn:hover {
@@ -38,7 +38,8 @@ body {
 
 .field {
     display: inline-flex;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-sizing: border-box;
 }
 
 .field:hover {
@@ -46,23 +47,26 @@ body {
 }
 
 .cell {
+    display: flex;
+    justify-content: center;
     width: 40px;
     height: 40px;
     border: black solid 1px;
-    padding: 1px;
+    padding: 2px;
+    font-family: Arial;
 }
 
 .field-container {
     width: 60%;
     display: flex;
     justify-content: center;
-    background-color: white;
-    padding: 2% 0 2%;
+    background-color: whitesmoke;
+    margin: auto;
 }
 
 .bottom-container {
     background-color: whitesmoke;
-    padding: 5px;
+    padding: 15px;
 }
 
 .constBtns .btn{

@@ -45,6 +45,7 @@ function stopCount() {
     if (timer) {
         clearTimeout(timer);
         timer=null;
+        count=0
     }
 }
 
