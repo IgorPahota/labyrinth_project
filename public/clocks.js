@@ -37,8 +37,6 @@ function timeCount() {
 function startCount() {
     if (!timer)
         timeCount();
-        document.querySelector('')
-
 }
 
 function stopCount() {
