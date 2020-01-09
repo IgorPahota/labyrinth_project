@@ -1,21 +1,28 @@
 #header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: whitesmoke;
     padding: 15px;
+    justify-content: space-around;
 }
 
 .topInput {
-    width: 400px;
-    font-size: 18px;
+    width: 500px;
+    font-size: 20px;
     background-color: whitesmoke;
-    border: 0;
+    border: 0px;
+    margin: 5px;
+}
 
+#inputBox {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
 }
 
 body {
     font-family: Arial;
-    background-color: seashell;
+    background-color: gainsboro;
 }
 
 .btn:hover {
@@ -51,7 +58,7 @@ body {
 }
 
 .field-container {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: center;
     background-color: whitesmoke;
@@ -63,8 +70,19 @@ body {
     padding: 15px;
 }
 
+.constBtns {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    /*padding: 5px;*/
+    justify-content: center;
+}
+
 .constBtns .btn{
     background-color: lightgray;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
 }
 
 .column {
@@ -110,5 +128,9 @@ body {
     font-size: 14px;
     background-color: lightgray;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border-radius: 5px;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: row;
 }
