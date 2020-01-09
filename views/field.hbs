@@ -1,3 +1,14 @@
+<div id="header">
+    <div class="topHeader">
+        <span class="topTitle">Название эксперимента: </span>
+        <span class="topTitle">Номер опыта: </span>
+        <span class="topTitle">Номер подопытного: </span></div>
+    <div class="topHeader">
+        <input class="topInput" id="experimentName">
+        <input class="topInput" id="experimentNumber">
+        <input class="topInput" id="mouseNumber">
+    </div>
+</div>
 <div class="top-container">
     <div class="field-container">
         <div class="field">
@@ -5,6 +16,7 @@
                 <div class="column">
                     {{#each a}}
                         <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false" onmousedown="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -13,6 +25,7 @@
                 <div class="column">
                     {{#each b}}
                         <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -21,6 +34,7 @@
                 <div class="column">
                     {{#each c}}
                         <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -29,6 +43,7 @@
                 <div class="column">
                     {{#each d}}
                         <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -37,6 +52,7 @@
                 <div class="column">
                     {{#each e}}
                         <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -45,6 +61,7 @@
                 <div class="column">
                     {{#each f}}
                         <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -53,6 +70,7 @@
                 <div class="column">
                     {{#each g}}
                         <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -61,6 +79,7 @@
                 <div class="column">
                     {{#each h}}
                         <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -69,6 +88,7 @@
                 <div class="column">
                     {{#each i}}
                         <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -78,6 +98,7 @@
                 <div class="column">
                     {{#each j}}
                         <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -86,6 +107,7 @@
                 <div class="column">
                     {{#each k}}
                         <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -121,6 +143,7 @@
             </div>
             <div class="longBtn"><div class="lltb">++</div><div class="lrbb">a</div></div>
         </div>
+        <div id="deleteButton">УДАЛИТЬ</div>
     </div>
 </div>
 <div class="bottom-container">
