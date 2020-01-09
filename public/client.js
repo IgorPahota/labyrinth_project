@@ -28,12 +28,13 @@ document.querySelector('.keyboard').addEventListener('click', function (event) {
     }
 });
 
-let color = 'grey';
+let color = 'lightgrey';
 let positionChecker = false;
 
 function positionStart() {
     if (!document.querySelector('[dataMouse=true]')) {
         positionChecker = true;
+        console.log('positionChecker = true')
     }
 }
 
@@ -46,8 +47,16 @@ document.querySelector(".field").addEventListener('click', function (event) {
     }
 })
 
-function changeColor(newColor) {
+
+
+
+function changeColor(element, newColor) {
     color = newColor;
+    let buttons = document.getElementsByClassName('constBtn');
+    for (i = 0; i < buttons.length; i++) {
+        buttons[i].style.backgroundColor = 'lightgrey';
+    }
+    element.style.backgroundColor = newColor;
 };
 
 function colorClick(element, newColor) {
@@ -55,6 +64,32 @@ function colorClick(element, newColor) {
     element.setAttribute("dataColor", newColor);
     element.style.backgroundColor = newColor;
 };
+
+function currentColor(element, newColor) {
+    newColor = color;
+    element = document.getElementById('currentColor')
+    element.style.backgroundColor = newColor;
+    switch (newColor) {
+        case 'lightgrey':
+            element.innerHTML = "ПОЛЕ";
+            break;
+        case 'darkblue':
+            element.innerHTML = "СТЕНА";
+            break;
+        case 'violet':
+            element.innerHTML = "ЛОЖНАЯ КОРМУШКА";
+            break;
+        case 'orange':
+            element.innerHTML = "КОРМУШКА";
+            break;
+        case 'green':
+            element.innerHTML = "ВХОД";
+            break;
+        case 'lightblue':
+            element.innerHTML = "ВЫХОД";
+            break;
+    }
+}
 
 document.addEventListener('keydown', (e) => {
     let mouse = document.querySelector('[dataMouse=true]');

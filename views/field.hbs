@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="column">
                     {{#each a}}
-                        <div class="cell" onclick="colorClick(this)"
+                        <div class="cell" onmousedown="colorClick(this)"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -12,7 +12,7 @@
                 </div>
                 <div class="column">
                     {{#each b}}
-                        <div class="cell" onclick="colorClick(this)"
+                        <div class="cell" onmousedown="colorClick(this)"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -20,7 +20,7 @@
                 </div>
                 <div class="column">
                     {{#each c}}
-                        <div class="cell" onclick="colorClick(this)"
+                        <div class="cell" onmousedown="colorClick(this)"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="column">
                     {{#each d}}
-                        <div class="cell" onclick="colorClick(this)"
+                        <div class="cell" onmousedown="colorClick(this)"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="column">
                     {{#each e}}
-                        <div class="cell" onclick="colorClick(this)"
+                        <div class="cell" onmousedown="colorClick(this)"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="column">
                     {{#each f}}
-                        <div class="cell" onclick="colorClick(this)"
+                        <div class="cell" onmousedown="colorClick(this)"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="column">
                     {{#each g}}
-                        <div class="cell" onclick="colorClick(this)"
+                        <div class="cell" onmousedown="colorClick(this)"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="column">
                     {{#each h}}
-                        <div class="cell" onclick="colorClick(this)"
+                        <div class="cell" onmousedown="colorClick(this)"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="column">
                     {{#each i}}
-                        <div class="cell" onclick="colorClick(this)"
+                        <div class="cell" onmousedown="colorClick(this)"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="column">
                     {{#each j}}
-                        <div class="cell" onclick="colorClick(this)"
+                        <div class="cell" onmousedown="colorClick(this)"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="column">
                     {{#each k}}
-                        <div class="cell" onclick="colorClick(this)"
+                        <div class="cell" onmousedown="colorClick(this)"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
                              dataColumn="{{this.column.default}}">{{this.id.default}}</div>
@@ -125,7 +125,7 @@
 </div>
 <div class="bottom-container">
     <div id="current_date_time_block2"></div>
-    <span id="countTime"></span>
+    <span style="padding-left: 15px">Время эксперимента: </span><span id="countTime"></span>
     <br/>
     <button class="powerBtn btn" onclick="startCount()">Начать эксперимент</button>
     <br/>
@@ -137,12 +137,12 @@
         <input class="actions" value="">
     </label>
     <div class="constBtns">
-        <button class="constBtn btn" onclick="changeColor('grey')">ПОЛЕ</button>
-        <button class="constBtn btn" onclick="changeColor('darkblue')">СТЕНА</button>
-        <button class="constBtn btn" onclick="changeColor('violet')">ЛОЖНАЯ КОРМУШКА</button>
-        <button class="constBtn btn" onclick="changeColor('orange')">КОРМУШКА</button>
-        <button class="constBtn btn" onclick="changeColor('green'); this.mouse = true">ВХОД</button>
-        <button class="constBtn btn" onclick="changeColor('lightblue')">ВЫХОД</button>
+        <button class="constBtn btn" onclick="changeColor(this, 'lightgrey')">ПОЛЕ</button>
+        <button class="constBtn btn" onclick="changeColor(this, 'darkblue')">СТЕНА</button>
+        <button class="constBtn btn" onclick="changeColor(this, 'violet')">ЛОЖНАЯ КОРМУШКА</button>
+        <button class="constBtn btn" onclick="changeColor(this, 'orange')">КОРМУШКА</button>
+        <button class="constBtn btn" onclick="changeColor(this, 'green')">ВХОД</button>
+        <button class="constBtn btn" onclick="changeColor(this, 'lightblue')">ВЫХОД</button>
         <button class="constBtn btn" onclick="positionStart()">НАЧАЛЬНАЯ ПОЗИЦИЯ</button>
     </div>
 </div>
