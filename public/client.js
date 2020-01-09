@@ -22,8 +22,6 @@ document.querySelector('.keyboard').addEventListener('click', function (event) {
     } else if (clickCount === 2) {
         clearTimeout(singleClickTimer);
         clickCount = 0;
-
-
         doubleClick();
     }
 });
@@ -48,8 +46,6 @@ document.querySelector(".field").addEventListener('click', function (event) {
 })
 
 
-
-
 function changeColor(element, newColor) {
     color = newColor;
     let buttons = document.getElementsByClassName('constBtn');
@@ -65,32 +61,6 @@ function colorClick(element, newColor) {
     element.style.backgroundColor = newColor;
 };
 
-function currentColor(element, newColor) {
-    newColor = color;
-    element = document.getElementById('currentColor')
-    element.style.backgroundColor = newColor;
-    switch (newColor) {
-        case 'lightgrey':
-            element.innerHTML = "ПОЛЕ";
-            break;
-        case 'darkblue':
-            element.innerHTML = "СТЕНА";
-            break;
-        case 'violet':
-            element.innerHTML = "ЛОЖНАЯ КОРМУШКА";
-            break;
-        case 'orange':
-            element.innerHTML = "КОРМУШКА";
-            break;
-        case 'green':
-            element.innerHTML = "ВХОД";
-            break;
-        case 'lightblue':
-            element.innerHTML = "ВЫХОД";
-            break;
-    }
-}
-
 document.addEventListener('keydown', (e) => {
     let mouse = document.querySelector('[dataMouse=true]');
     let prevColor = mouse.attributes.dataColor.value;
@@ -101,6 +71,7 @@ document.addEventListener('keydown', (e) => {
     switch (e.key) {
         case 'ArrowDown':
             if (mouse.attributes.dataRow.value < 11 && (document.querySelector(`div[dataRow="${Number(mouse.attributes.dataRow.value) + 1}"][dataColumn="${mouse.attributes.dataColumn.value}"]`)).style.backgroundColor !== 'darkblue') {
+                event.preventDefault();
                 mouse.style.backgroundColor = prevColor;
                 document.querySelector('.actions').value += mouse.innerHTML + '-';
                 document.querySelector('.actions').value += count + ',';
@@ -117,6 +88,7 @@ document.addEventListener('keydown', (e) => {
             }
         case 'ArrowUp':
             if (mouse.attributes.dataRow.value > 1 && (document.querySelector(`div[dataRow="${mouse.attributes.dataRow.value - 1}"][dataColumn="${mouse.attributes.dataColumn.value}"]`)).style.backgroundColor !== 'darkblue') {
+                event.preventDefault();
                 mouse.style.backgroundColor = prevColor;
                 document.querySelector('.actions').value += mouse.innerHTML + '-';
                 document.querySelector('.actions').value += count + ',';
@@ -133,7 +105,6 @@ document.addEventListener('keydown', (e) => {
             }
         case 'ArrowLeft':
             if (mouse.attributes.dataColumn.value > 1 && (document.querySelector(`div[dataRow="${mouse.attributes.dataRow.value}"][dataColumn="${mouse.attributes.dataColumn.value - 1}"]`)).style.backgroundColor !== 'darkblue') {
-                console.log(e.key)
                 mouse.style.backgroundColor = prevColor;
                 document.querySelector('.actions').value += mouse.innerHTML + '-';
                 document.querySelector('.actions').value += count + ',';
