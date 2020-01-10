@@ -1,26 +1,17 @@
-document.querySelector('.field').addEventListener('click', (event)=>{
-   event.stopPropagation();
-   console.log(event.target);
-   // console.log(event.firstChild);
-    function removed () {
-        console.log('removed')
-    }
-
+document.querySelector('.field').addEventListener('click', (event) => {
+    event.stopPropagation();
     let clickedDiv = event.target;
 
-    const keyHandler =  (event) => {
+    const keyHandler = (event) => {
         event.preventDefault();
-        console.log('pressed')
-        // event.stopPropagation();
-        // let pressedButton = event.key;
-        // console.log(clickedDiv.innerHTML);
-        clickedDiv.innerHTML = event.key;
-        document.removeEventListener('keydown', keyHandler);
-        console.log('removed')
-
+        if (event.keyCode >= 48 && event.keyCode <= 90) {
+            clickedDiv.style.fontWeight = 'bold';
+            clickedDiv.style.fontSize = '20px';
+            clickedDiv.setAttribute('letter', event.key);
+            clickedDiv.innerHTML = event.key;
+            document.removeEventListener('keydown', keyHandler);
+        }
     }
-
     document.addEventListener('keydown', keyHandler);
-
 });
 

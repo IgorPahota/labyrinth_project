@@ -37,14 +37,13 @@ function timeCount() {
 function startCount() {
     if (!timer)
         timeCount();
-
-
 }
 
 function stopCount() {
     if (timer) {
         clearTimeout(timer);
         timer=null;
+        count=0
     }
 }
 

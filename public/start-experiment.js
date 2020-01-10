@@ -1,5 +1,7 @@
 let savedField = {
-    name: 'test',
+    experimentName: String,
+    experimentNumber: Number,
+    mouseNumber: Number,
     dateOfCreation: new Date(),
     field: [[],[],[],[],[],[],[],[],[],[],[]]
 };
@@ -31,15 +33,21 @@ let savedField = {
          }
 
      }
+        let experimentNameNew = document.querySelector('#experimentName').value
+        let experimentNumberNew = document.querySelector('#experimentNumber').value
+        let mouseNumberNew = document.querySelector('#mouseNumber').value
+         savedField.experimentName = experimentNameNew;
+        savedField.experimentNumber = experimentNumberNew;
+        savedField.mouseNumber = mouseNumberNew;
 
-         const response = await fetch (`/`,{
+        const response = await fetch (`/`,{
              method: 'POST',
              headers: {'content-type': 'application/json'},
              body: JSON.stringify({ savedField })
 
          });
      const data = await response.json();
-     console.log(data)
+     // console.log(data)
      // window.location.href=`/experiment/${data}`
      location.assign(`/experiment/${data}`)
          // console.log(savedField);
