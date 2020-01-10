@@ -26,6 +26,7 @@ function changeColor(element, newColor) {
         buttons[i].style.backgroundColor = 'lightgrey';
     }
     element.style.backgroundColor = newColor;
+
 };
 
 function colorClick(element, newColor) {
@@ -33,3 +34,10 @@ function colorClick(element, newColor) {
     element.setAttribute("dataColor", newColor);
     element.style.backgroundColor = newColor;
 };
+
+function deleteAction() {
+
+    let actionInput = document.getElementsByClassName('actions');
+    // console.log(actionInput[0].value)
+    actionInput[0].value = actionInput[0].value.slice(0,-1);
+}

@@ -16,7 +16,7 @@
                              onselectstart="return false" onmousedown="return false"
                              style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
                              dataColor="{{this.color}}" dataRow="{{this.row}}"
-                             dataColumn="{{this.column}}">{{this.id}}</div>
+                             dataColumn="{{this.column}}">{{this.letter}}</div>
                     {{/each}}
                 </div>
                 <div id="2" class="column">
@@ -25,7 +25,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
                              dataColor="{{this.color}}" dataRow="{{this.row}}"
-                             dataColumn="{{this.column}}">{{this.id}}</div>
+                             dataColumn="{{this.column}}">{{this.letter}}</div>
                     {{/each}}
                 </div>
                 <div id="3" class="column">
@@ -34,7 +34,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
                              dataColor="{{this.color}}" dataRow="{{this.row}}"
-                             dataColumn="{{this.column}}">{{this.id}}</div>
+                             dataColumn="{{this.column}}">{{this.letter}}</div>
                     {{/each}}
                 </div>
                 <div id="4" class="column">
@@ -43,7 +43,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
                              dataColor="{{this.color}}" dataRow="{{this.row}}"
-                             dataColumn="{{this.column}}">{{this.id}}</div>
+                             dataColumn="{{this.column}}">{{this.letter}}</div>
                     {{/each}}
                 </div>
                 <div id="5" class="column">
@@ -52,7 +52,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
                              dataColor="{{this.color}}" dataRow="{{this.row}}"
-                             dataColumn="{{this.column}}">{{this.id}}</div>
+                             dataColumn="{{this.column}}">{{this.letter}}</div>
                     {{/each}}
                 </div>
                 <div id="6" class="column">
@@ -61,7 +61,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
                              dataColor="{{this.color}}" dataRow="{{this.row}}"
-                             dataColumn="{{this.column}}">{{this.id}}</div>
+                             dataColumn="{{this.column}}">{{this.letter}}</div>
                     {{/each}}
                 </div>
                 <div id="7" class="column">
@@ -70,7 +70,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
                              dataColor="{{this.color}}" dataRow="{{this.row}}"
-                             dataColumn="{{this.column}}">{{this.id}}</div>
+                             dataColumn="{{this.column}}">{{this.letter}}</div>
                     {{/each}}
                 </div>
                 <div id="8" class="column">
@@ -79,7 +79,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
                              dataColor="{{this.color}}" dataRow="{{this.row}}"
-                             dataColumn="{{this.column}}">{{this.id}}</div>
+                             dataColumn="{{this.column}}">{{this.letter}}</div>
                     {{/each}}
                 </div>
                 <div id="9" class="column">
@@ -88,7 +88,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
                              dataColor="{{this.color}}" dataRow="{{this.row}}"
-                             dataColumn="{{this.column}}">{{this.id}}</div>
+                             dataColumn="{{this.column}}">{{this.letter}}</div>
 
                     {{/each}}
                 </div>
@@ -98,7 +98,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
                              dataColor="{{this.color}}" dataRow="{{this.row}}"
-                             dataColumn="{{this.column}}">{{this.id}}</div>
+                             dataColumn="{{this.column}}">{{this.letter}}</div>
                     {{/each}}
                 </div>
                 <div id="11" class="column">
@@ -107,7 +107,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
                              dataColor="{{this.color}}" dataRow="{{this.row}}"
-                             dataColumn="{{this.column}}">{{this.id}}</div>
+                             dataColumn="{{this.column}}">{{this.letter}}</div>
                     {{/each}}
                 </div>
             </div>
@@ -151,11 +151,10 @@
 
     <div class="btnContainer">
         <div>
-            <button class="powerBtn btn" onclick="startCount(), startExperiment()" style="margin-top: 10px">Начать эксперимент</button>
+            <button class="powerBtn btn" onclick="startCount()" style="margin-top: 10px">Начать эксперимент</button>
             <br/>
-            <button class="powerBtn btn" onclick="stopCount()">Остановить эксперимент</button>
+            <button class="powerBtn btn" onclick="stopCount()">Закончить эксперимент</button>
             <br/>
-            <button class="powerBtn btn" onclick="savePattern()">Сохранить шаблон</button>
         </div>
         <div class="constBtns">
             <button class="constBtn btn" onclick="changeColor(this, 'lightgrey')">Поле</button>
