@@ -36,9 +36,10 @@ let savedField = {
         let experimentNameNew = document.querySelector('#experimentName').value
         let experimentNumberNew = document.querySelector('#experimentNumber').value
         let mouseNumberNew = document.querySelector('#mouseNumber').value
-         savedField.experimentName = experimentNameNew;
+        savedField.experimentName = experimentNameNew;
         savedField.experimentNumber = experimentNumberNew;
         savedField.mouseNumber = mouseNumberNew;
+
 
         const response = await fetch (`/`,{
              method: 'POST',
