@@ -41,3 +41,8 @@ function deleteAction() {
     // console.log(actionInput[0].value)
     actionInput[0].value = actionInput[0].value.slice(0,-1);
 }
+
+let protocol = [];
+
+
+

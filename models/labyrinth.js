@@ -15,7 +15,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 1},
-                    row: {type: Number, default: 1}
+                    row: {type: Number, default: 1},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'a2'},
@@ -23,7 +24,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 1},
-                    row: {type: Number, default: 2}
+                    row: {type: Number, default: 2},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'a3'},
@@ -31,7 +33,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 1},
-                    row: {type: Number, default: 3}
+                    row: {type: Number, default: 3},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'a4'},
@@ -39,7 +42,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 1},
-                    row: {type: Number, default: 4}
+                    row: {type: Number, default: 4},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'a5'},
@@ -47,7 +51,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 1},
-                    row: {type: Number, default: 5}
+                    row: {type: Number, default: 5},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'a6'},
@@ -55,7 +60,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 1},
-                    row: {type: Number, default: 6}
+                    row: {type: Number, default: 6},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'a7'},
@@ -63,7 +69,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 1},
-                    row: {type: Number, default: 7}
+                    row: {type: Number, default: 7},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'a8'},
@@ -71,7 +78,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 1},
-                    row: {type: Number, default: 8}
+                    row: {type: Number, default: 8},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'a9'},
@@ -79,7 +87,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 1},
-                    row: {type: Number, default: 9}
+                    row: {type: Number, default: 9},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'a10'},
@@ -87,7 +96,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 1},
-                    row: {type: Number, default: 10}
+                    row: {type: Number, default: 10},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'a11'},
@@ -95,7 +105,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 1},
-                    row: {type: Number, default: 11}
+                    row: {type: Number, default: 11},
+                    inner: String
                 },
 
             ],
@@ -106,7 +117,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 2},
-                    row: {type: Number, default: 1}
+                    row: {type: Number, default: 1},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'b2'},
@@ -114,7 +126,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 2},
-                    row: {type: Number, default: 2}
+                    row: {type: Number, default: 2},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'b3'},
@@ -122,7 +135,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 2},
-                    row: {type: Number, default: 3}
+                    row: {type: Number, default: 3},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'b4'},
@@ -130,7 +144,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 2},
-                    row: {type: Number, default: 4}
+                    row: {type: Number, default: 4},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'b5'},
@@ -138,7 +153,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 2},
-                    row: {type: Number, default: 5}
+                    row: {type: Number, default: 5},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'b6'},
@@ -146,7 +162,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 2},
-                    row: {type: Number, default: 6}
+                    row: {type: Number, default: 6},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'b7'},
@@ -154,7 +171,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 2},
-                    row: {type: Number, default: 7}
+                    row: {type: Number, default: 7},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'b8'},
@@ -162,7 +180,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 2},
-                    row: {type: Number, default: 8}
+                    row: {type: Number, default: 8},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'b9'},
@@ -170,7 +189,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 2},
-                    row: {type: Number, default: 9}
+                    row: {type: Number, default: 9},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'b10'},
@@ -178,7 +198,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 2},
-                    row: {type: Number, default: 10}
+                    row: {type: Number, default: 10},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'b11'},
@@ -186,7 +207,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 2},
-                    row: {type: Number, default: 11}
+                    row: {type: Number, default: 11},
+                    inner: String
                 },
 
             ],
@@ -197,7 +219,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 3},
-                    row: {type: Number, default: 1}
+                    row: {type: Number, default: 1},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'c2'},
@@ -205,7 +228,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 3},
-                    row: {type: Number, default: 2}
+                    row: {type: Number, default: 2},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'c3'},
@@ -213,7 +237,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 3},
-                    row: {type: Number, default: 3}
+                    row: {type: Number, default: 3},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'c4'},
@@ -221,7 +246,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 3},
-                    row: {type: Number, default: 4}
+                    row: {type: Number, default: 4},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'c5'},
@@ -229,7 +255,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 3},
-                    row: {type: Number, default: 5}
+                    row: {type: Number, default: 5},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'c6'},
@@ -237,7 +264,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 3},
-                    row: {type: Number, default: 6}
+                    row: {type: Number, default: 6},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'c7'},
@@ -245,7 +273,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 3},
-                    row: {type: Number, default: 7}
+                    row: {type: Number, default: 7},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'c8'},
@@ -253,7 +282,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 3},
-                    row: {type: Number, default: 8}
+                    row: {type: Number, default: 8},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'c9'},
@@ -261,7 +291,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 3},
-                    row: {type: Number, default: 9}
+                    row: {type: Number, default: 9},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'c10'},
@@ -269,7 +300,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 3},
-                    row: {type: Number, default: 10}
+                    row: {type: Number, default: 10},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'c11'},
@@ -277,7 +309,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 3},
-                    row: {type: Number, default: 11}
+                    row: {type: Number, default: 11},
+                    inner: String
                 },
 
             ],
@@ -288,7 +321,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 4},
-                    row: {type: Number, default: 1}
+                    row: {type: Number, default: 1},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'd2'},
@@ -296,7 +330,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 4},
-                    row: {type: Number, default: 2}
+                    row: {type: Number, default: 2},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'd3'},
@@ -304,7 +339,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 4},
-                    row: {type: Number, default: 3}
+                    row: {type: Number, default: 3},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'd4'},
@@ -312,7 +348,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 4},
-                    row: {type: Number, default: 4}
+                    row: {type: Number, default: 4},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'd5'},
@@ -320,7 +357,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 4},
-                    row: {type: Number, default: 5}
+                    row: {type: Number, default: 5},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'd6'},
@@ -328,7 +366,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 4},
-                    row: {type: Number, default: 6}
+                    row: {type: Number, default: 6},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'd7'},
@@ -336,7 +375,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 4},
-                    row: {type: Number, default: 7}
+                    row: {type: Number, default: 7},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'd8'},
@@ -344,7 +384,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 4},
-                    row: {type: Number, default: 8}
+                    row: {type: Number, default: 8},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'd9'},
@@ -352,7 +393,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 4},
-                    row: {type: Number, default: 9}
+                    row: {type: Number, default: 9},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'd10'},
@@ -360,7 +402,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 4},
-                    row: {type: Number, default: 10}
+                    row: {type: Number, default: 10},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'd11'},
@@ -368,7 +411,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 4},
-                    row: {type: Number, default: 11}
+                    row: {type: Number, default: 11},
+                    inner: String
                 },
 
             ],
@@ -379,7 +423,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 5},
-                    row: {type: Number, default: 1}
+                    row: {type: Number, default: 1},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'e2'},
@@ -387,7 +432,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 5},
-                    row: {type: Number, default: 2}
+                    row: {type: Number, default: 2},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'e3'},
@@ -395,7 +441,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 5},
-                    row: {type: Number, default: 3}
+                    row: {type: Number, default: 3},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'e4'},
@@ -403,7 +450,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 5},
-                    row: {type: Number, default: 4}
+                    row: {type: Number, default: 4},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'e5'},
@@ -411,7 +459,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 5},
-                    row: {type: Number, default: 5}
+                    row: {type: Number, default: 5},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'e6'},
@@ -419,7 +468,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 5},
-                    row: {type: Number, default: 6}
+                    row: {type: Number, default: 6},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'e7'},
@@ -427,7 +477,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 5},
-                    row: {type: Number, default: 7}
+                    row: {type: Number, default: 7},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'e8'},
@@ -435,7 +486,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 5},
-                    row: {type: Number, default: 8}
+                    row: {type: Number, default: 8},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'e9'},
@@ -443,7 +495,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 5},
-                    row: {type: Number, default: 9}
+                    row: {type: Number, default: 9},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'e10'},
@@ -451,7 +504,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 5},
-                    row: {type: Number, default: 10}
+                    row: {type: Number, default: 10},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'e11'},
@@ -459,7 +513,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 5},
-                    row: {type: Number, default: 11}
+                    row: {type: Number, default: 11},
+                    inner: String
                 },
 
             ],
@@ -470,7 +525,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 6},
-                    row: {type: Number, default: 1}
+                    row: {type: Number, default: 1},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'f2'},
@@ -478,7 +534,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 6},
-                    row: {type: Number, default: 2}
+                    row: {type: Number, default: 2},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'f3'},
@@ -486,7 +543,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 6},
-                    row: {type: Number, default: 3}
+                    row: {type: Number, default: 3},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'f4'},
@@ -494,7 +552,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 6},
-                    row: {type: Number, default: 4}
+                    row: {type: Number, default: 4},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'f5'},
@@ -502,7 +561,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 6},
-                    row: {type: Number, default: 5}
+                    row: {type: Number, default: 5},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'f6'},
@@ -510,7 +570,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 6},
-                    row: {type: Number, default: 6}
+                    row: {type: Number, default: 6},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'f7'},
@@ -518,7 +579,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 6},
-                    row: {type: Number, default: 7}
+                    row: {type: Number, default: 7},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'f8'},
@@ -526,7 +588,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 6},
-                    row: {type: Number, default: 8}
+                    row: {type: Number, default: 8},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'f9'},
@@ -534,7 +597,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 6},
-                    row: {type: Number, default: 9}
+                    row: {type: Number, default: 9},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'f10'},
@@ -542,7 +606,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 6},
-                    row: {type: Number, default: 10}
+                    row: {type: Number, default: 10},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'f11'},
@@ -550,7 +615,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 6},
-                    row: {type: Number, default: 11}
+                    row: {type: Number, default: 11},
+                    inner: String
                 },
 
             ],
@@ -561,7 +627,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 7},
-                    row: {type: Number, default: 1}
+                    row: {type: Number, default: 1},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'g2'},
@@ -569,7 +636,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 7},
-                    row: {type: Number, default: 2}
+                    row: {type: Number, default: 2},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'g3'},
@@ -577,7 +645,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 7},
-                    row: {type: Number, default: 3}
+                    row: {type: Number, default: 3},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'g4'},
@@ -585,7 +654,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 7},
-                    row: {type: Number, default: 4}
+                    row: {type: Number, default: 4},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'g5'},
@@ -593,7 +663,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 7},
-                    row: {type: Number, default: 5}
+                    row: {type: Number, default: 5},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'g6'},
@@ -601,7 +672,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 7},
-                    row: {type: Number, default: 6}
+                    row: {type: Number, default: 6},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'g7'},
@@ -609,7 +681,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 7},
-                    row: {type: Number, default: 7}
+                    row: {type: Number, default: 7},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'g8'},
@@ -617,7 +690,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 7},
-                    row: {type: Number, default: 8}
+                    row: {type: Number, default: 8},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'g9'},
@@ -625,7 +699,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 7},
-                    row: {type: Number, default: 9}
+                    row: {type: Number, default: 9},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'g10'},
@@ -633,7 +708,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 7},
-                    row: {type: Number, default: 10}
+                    row: {type: Number, default: 10},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'g11'},
@@ -641,7 +717,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 7},
-                    row: {type: Number, default: 11}
+                    row: {type: Number, default: 11},
+                    inner: String
                 },
 
             ],
@@ -652,7 +729,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 8},
-                    row: {type: Number, default: 1}
+                    row: {type: Number, default: 1},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'h2'},
@@ -660,7 +738,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 8},
-                    row: {type: Number, default: 2}
+                    row: {type: Number, default: 2},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'h3'},
@@ -668,7 +747,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 8},
-                    row: {type: Number, default: 3}
+                    row: {type: Number, default: 3},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'h4'},
@@ -676,7 +756,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 8},
-                    row: {type: Number, default: 4}
+                    row: {type: Number, default: 4},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'h5'},
@@ -684,7 +765,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 8},
-                    row: {type: Number, default: 5}
+                    row: {type: Number, default: 5},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'h6'},
@@ -692,7 +774,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 8},
-                    row: {type: Number, default: 6}
+                    row: {type: Number, default: 6},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'h7'},
@@ -700,7 +783,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 8},
-                    row: {type: Number, default: 7}
+                    row: {type: Number, default: 7},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'h8'},
@@ -708,7 +792,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 8},
-                    row: {type: Number, default: 8}
+                    row: {type: Number, default: 8},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'h9'},
@@ -716,7 +801,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 8},
-                    row: {type: Number, default: 9}
+                    row: {type: Number, default: 9},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'h10'},
@@ -724,7 +810,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 8},
-                    row: {type: Number, default: 10}
+                    row: {type: Number, default: 10},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'h11'},
@@ -732,7 +819,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 8},
-                    row: {type: Number, default: 11}
+                    row: {type: Number, default: 11},
+                    inner: String
                 },
 
             ],
@@ -743,7 +831,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 9},
-                    row: {type: Number, default: 1}
+                    row: {type: Number, default: 1},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'i2'},
@@ -751,7 +840,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 9},
-                    row: {type: Number, default: 2}
+                    row: {type: Number, default: 2},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'i3'},
@@ -759,7 +849,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 9},
-                    row: {type: Number, default: 3}
+                    row: {type: Number, default: 3},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'i4'},
@@ -767,7 +858,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 9},
-                    row: {type: Number, default: 4}
+                    row: {type: Number, default: 4},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'i5'},
@@ -775,7 +867,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 9},
-                    row: {type: Number, default: 5}
+                    row: {type: Number, default: 5},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'i6'},
@@ -783,7 +876,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 9},
-                    row: {type: Number, default: 6}
+                    row: {type: Number, default: 6},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'i7'},
@@ -791,7 +885,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 9},
-                    row: {type: Number, default: 7}
+                    row: {type: Number, default: 7},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'i8'},
@@ -799,7 +894,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 9},
-                    row: {type: Number, default: 8}
+                    row: {type: Number, default: 8},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'i9'},
@@ -807,7 +903,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 9},
-                    row: {type: Number, default: 9}
+                    row: {type: Number, default: 9},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'i10'},
@@ -815,7 +912,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 9},
-                    row: {type: Number, default: 10}
+                    row: {type: Number, default: 10},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'i11'},
@@ -823,7 +921,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 9},
-                    row: {type: Number, default: 11}
+                    row: {type: Number, default: 11},
+                    inner: String
                 },
 
             ],
@@ -834,7 +933,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 10},
-                    row: {type: Number, default: 1}
+                    row: {type: Number, default: 1},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'j2'},
@@ -842,7 +942,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 10},
-                    row: {type: Number, default: 2}
+                    row: {type: Number, default: 2},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'j3'},
@@ -850,7 +951,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 10},
-                    row: {type: Number, default: 3}
+                    row: {type: Number, default: 3},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'j4'},
@@ -858,7 +960,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 10},
-                    row: {type: Number, default: 4}
+                    row: {type: Number, default: 4},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'j5'},
@@ -866,7 +969,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 10},
-                    row: {type: Number, default: 5}
+                    row: {type: Number, default: 5},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'j6'},
@@ -874,7 +978,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 10},
-                    row: {type: Number, default: 6}
+                    row: {type: Number, default: 6},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'j7'},
@@ -882,7 +987,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 10},
-                    row: {type: Number, default: 7}
+                    row: {type: Number, default: 7},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'j8'},
@@ -890,7 +996,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 10},
-                    row: {type: Number, default: 8}
+                    row: {type: Number, default: 8},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'j9'},
@@ -898,7 +1005,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 10},
-                    row: {type: Number, default: 9}
+                    row: {type: Number, default: 9},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'j10'},
@@ -906,7 +1014,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 10},
-                    row: {type: Number, default: 10}
+                    row: {type: Number, default: 10},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'j11'},
@@ -914,7 +1023,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 10},
-                    row: {type: Number, default: 11}
+                    row: {type: Number, default: 11},
+                    inner: String
                 },
 
             ],
@@ -925,7 +1035,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 11},
-                    row: {type: Number, default: 1}
+                    row: {type: Number, default: 1},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'k2'},
@@ -933,7 +1044,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 11},
-                    row: {type: Number, default: 2}
+                    row: {type: Number, default: 2},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'k3'},
@@ -941,7 +1053,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 11},
-                    row: {type: Number, default: 3}
+                    row: {type: Number, default: 3},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'k4'},
@@ -949,7 +1062,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 11},
-                    row: {type: Number, default: 4}
+                    row: {type: Number, default: 4},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'k5'},
@@ -957,7 +1071,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 11},
-                    row: {type: Number, default: 5}
+                    row: {type: Number, default: 5},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'k6'},
@@ -965,7 +1080,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 11},
-                    row: {type: Number, default: 6}
+                    row: {type: Number, default: 6},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'k7'},
@@ -973,7 +1089,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 11},
-                    row: {type: Number, default: 7}
+                    row: {type: Number, default: 7},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'k8'},
@@ -981,7 +1098,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 11},
-                    row: {type: Number, default: 8}
+                    row: {type: Number, default: 8},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'k9'},
@@ -989,7 +1107,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 11},
-                    row: {type: Number, default: 9}
+                    row: {type: Number, default: 9},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'k10'},
@@ -997,7 +1116,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 11},
-                    row: {type: Number, default: 10}
+                    row: {type: Number, default: 10},
+                    inner: String
                 },
                 {
                     id: {type: String, default: 'k11'},
@@ -1005,7 +1125,8 @@ const labSchema = new Schema({
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
                     column: {type: Number, default: 11},
-                    row: {type: Number, default: 11}
+                    row: {type: Number, default: 11},
+                    inner: String
                 },
 
             ]

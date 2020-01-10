@@ -6,13 +6,13 @@ const router = express.Router();
 
 
 // Seeder
-// router.get('/', (req, res) => {
-//     let testField = new Lab ({
-//         name: 'testing'
-//     });
-//     testField.save();
-//     res.send('seed done')
-// });
+router.get('/', (req, res) => {
+    let testField = new Lab ({
+        name: 'main'
+    });
+    testField.save();
+    res.send('seed done')
+});
 
 router.post('/', async (req, res) => {
     let newField = new Lab ({

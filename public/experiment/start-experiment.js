@@ -16,7 +16,6 @@ let savedField = {
              let row = document.getElementById(`111`).children[i].children[j].getAttribute('dataRow');
              let id = document.getElementById(`111`).children[i].children[j].getAttribute('id')
              savedField.field[i].push(
-
                  {
                      color,
                      letter,
@@ -32,9 +31,10 @@ let savedField = {
         let experimentNameNew = document.querySelector('#experimentName').value
         let experimentNumberNew = document.querySelector('#experimentNumber').value
         let mouseNumberNew = document.querySelector('#mouseNumber').value
-         savedField.experimentName = experimentNameNew;
+        savedField.experimentName = experimentNameNew;
         savedField.experimentNumber = experimentNumberNew;
         savedField.mouseNumber = mouseNumberNew;
+
 
         const response = await fetch (`/`,{
              method: 'POST',
