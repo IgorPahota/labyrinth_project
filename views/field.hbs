@@ -6,7 +6,7 @@
     </div>
     <img src="logo.png">
 </div>
-<div class="top-container">
+<div class="top-container" onselectstart="return false">
     <div class="field-container">
         <div class="field">
             <div id='111' class="row">
@@ -124,7 +124,7 @@
             </div>
         </div>
     </div>
-    <div class="keyboard-container">
+    <div class="keyboard-container" onselectstart="return false">
         <div id="current_date_time_block2" style="margin: auto; padding-top: 0"></div>
         <div class="keyboard" onselectstart="return false">
             <div class="leftBtns">
@@ -152,10 +152,10 @@
             </div>
             <div class="longBtn" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px"><div class="lltb">++</div><div class="lrbb">a</div></div>
         </div>
-        <div id="deleteButton">УДАЛИТЬ</div>
+        <div id="deleteButton" onclick="deleteAction()">УДАЛИТЬ</div>
     </div>
 </div>
-<div class="bottom-container">
+<div class="bottom-container" onselectstart="return false">
 
     <span style="padding-left: 15px">Время эксперимента: </span><span id="countTime"></span>
     <br/>
