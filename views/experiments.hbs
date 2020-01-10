@@ -2,4 +2,13 @@
     <span>Выберите модель лабиринта</span>
     <img src="logo.png">
 </div>
+<div>
+    {{each allFields}}
+        {{this.experimentName}}
+        {{this.experimentNumber}}
+        {{this.mouseNumber}}
+        {{this.dateOfCreation}}
+        <button></button>
+    {{/each}}
+</div>
 
