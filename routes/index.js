@@ -66,6 +66,10 @@ router.get('/protocol', async (req, res) => {
     res.render('protocol')
 });
 
+router.get('/experiments', async (req,res) => {
+    let allFields = await Lab.find({});
+    res.render('experiments', {allFields})
+})
 
 
 module.exports = router;
