@@ -15,7 +15,6 @@ const router = express.Router();
 // });
 
 router.post('/', async (req, res) => {
-    // console.log(req.body.savedField)
     let newField = new Lab ({
         experimentName: req.body.savedField.experimentName,
         experimentNumber: req.body.savedField.experimentNumber,
@@ -25,17 +24,14 @@ router.post('/', async (req, res) => {
     })
    await newField.save()
     let currentField = await Lab.findOne({dateOfCreation: req.body.savedField.dateOfCreation})
-    // console.log(currentField);
     res.json(currentField._id)
 
 
 })
 
 router.get('/experiment/:id', async (req, res) =>{
-    // console.log(req.params.id)
     let id = req.params.id
     let test = await Lab.findOne({_id:id})
-    // console.log(test)
     let a = test.field[0]
         b = test.field[1],
         c = test.field[2],
@@ -47,8 +43,6 @@ router.get('/experiment/:id', async (req, res) =>{
         i = test.field[8],
         j = test.field[9],
         k = test.field[10]
-    console.log(a)
-     // await res.send(a, b, c, d, e, f, g, h, i, j, k)
     await res.render('current', {a, b, c, d, e, f, g, h, i, j, k, test})
 })
 
