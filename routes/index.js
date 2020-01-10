@@ -62,4 +62,10 @@ router.get('/field', async (req, res) => {
      await res.render('field', {a, b, c, d, e, f, g, h, i, j, k})
 });
 
+router.get('/protocol', async (req, res) => {
+    res.render('protocol')
+});
+
+
+
 module.exports = router;
