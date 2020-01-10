@@ -380,7 +380,7 @@ const labSchema = new Schema({
                     row: {type: Number, default: 1}
                 },
                 {
-                    id: {type: String, default: 'd2'},
+                    id: {type: String, default: 'e2'},
                     color: {String, default: 'lightgrey'},
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
@@ -388,7 +388,7 @@ const labSchema = new Schema({
                     row: {type: Number, default: 2}
                 },
                 {
-                    id: {type: String, default: 'd3'},
+                    id: {type: String, default: 'e3'},
                     color: {String, default: 'lightgrey'},
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
@@ -396,7 +396,7 @@ const labSchema = new Schema({
                     row: {type: Number, default: 3}
                 },
                 {
-                    id: {type: String, default: 'd4'},
+                    id: {type: String, default: 'e4'},
                     color: {String, default: 'lightgrey'},
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
@@ -404,7 +404,7 @@ const labSchema = new Schema({
                     row: {type: Number, default: 4}
                 },
                 {
-                    id: {type: String, default: 'd5'},
+                    id: {type: String, default: 'e5'},
                     color: {String, default: 'lightgrey'},
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
@@ -412,7 +412,7 @@ const labSchema = new Schema({
                     row: {type: Number, default: 5}
                 },
                 {
-                    id: {type: String, default: 'd6'},
+                    id: {type: String, default: 'e6'},
                     color: {String, default: 'lightgrey'},
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
@@ -420,7 +420,7 @@ const labSchema = new Schema({
                     row: {type: Number, default: 6}
                 },
                 {
-                    id: {type: String, default: 'd7'},
+                    id: {type: String, default: 'e7'},
                     color: {String, default: 'lightgrey'},
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
@@ -428,7 +428,7 @@ const labSchema = new Schema({
                     row: {type: Number, default: 7}
                 },
                 {
-                    id: {type: String, default: 'd8'},
+                    id: {type: String, default: 'e8'},
                     color: {String, default: 'lightgrey'},
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
@@ -436,7 +436,7 @@ const labSchema = new Schema({
                     row: {type: Number, default: 8}
                 },
                 {
-                    id: {type: String, default: 'd9'},
+                    id: {type: String, default: 'e9'},
                     color: {String, default: 'lightgrey'},
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
@@ -444,7 +444,7 @@ const labSchema = new Schema({
                     row: {type: Number, default: 9}
                 },
                 {
-                    id: {type: String, default: 'd10'},
+                    id: {type: String, default: 'e10'},
                     color: {String, default: 'lightgrey'},
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},
@@ -452,7 +452,7 @@ const labSchema = new Schema({
                     row: {type: Number, default: 10}
                 },
                 {
-                    id: {type: String, default: 'd11'},
+                    id: {type: String, default: 'e11'},
                     color: {String, default: 'lightgrey'},
                     letter: {type: String, default: ''},
                     mouse: {type: Boolean, default: false},

@@ -26,6 +26,7 @@ function changeColor(element, newColor) {
         buttons[i].style.backgroundColor = 'lightgrey';
     }
     element.style.backgroundColor = newColor;
+
 };
 
 function colorClick(element, newColor) {
