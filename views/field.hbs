@@ -7,7 +7,7 @@
     <img src="logo.png">
 </div>
 <div class="top-container" onselectstart="return false">
-    <div class="field-container">
+    <div class="field-container" style="width: 100%">
         <div class="field">
             <div id='111' class="row">
                 <div id="1" class="column">
@@ -124,47 +124,12 @@
             </div>
         </div>
     </div>
-    <div class="keyboard-container" onselectstart="return false">
-        <div id="current_date_time_block2" style="margin: auto; padding-top: 0"></div>
-        <div class="keyboard" onselectstart="return false">
-            <div class="leftBtns">
-                <div class="smallBtnFld">
-                    <div class="btnRow">
-                        <div class="smallBtn" style="border-top-left-radius: 5px"><span class="ltb">t</span><span class="rbb">?</span></div>
-                        <div class="smallBtn"><span class="ltb">h</span><span class="rbb">_</span></div>
-                        <div class="smallBtn"><span class="ltb">o</span><span class="rbb">i</span></div>
-                    </div>
-                    <div class="btnRow">
-                        <div class="smallBtn"><span class="ltb">j</span><span class="rbb">q</span></div>
-                        <div class="smallBtn"><span class="ltb">╎</span><span class="rbb">b</span></div>
-                        <div class="smallBtn"><span class="ltb">s</span><span class="rbb">l</span></div>
-                    </div>
-                    <div class="btnRow">
-                        <div class="smallBtn"><span class="ltb">e</span><span class="rbb">x</span></div>
-                        <div class="smallBtn"><span class="ltb">w</span><span class="rbb">z</span></div>
-                        <div class="smallBtn"><span class="ltb">r</span><span class="rbb">m</span></div>
-                    </div>
-                </div>
-                <div class="btnRow">
-                    <div class="wideBtn" style="border-bottom-left-radius: 5px"><div class="wltb">y</div><div class="wrbb">d</div></div>
-                    <div class="smallBtn"><span class="ltb">k</span><span class="rbb">g</span></div>
-                </div>
-            </div>
-            <div class="longBtn" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px"><div class="lltb">++</div><div class="lrbb">a</div></div>
-        </div>
-        <div id="deleteButton" onclick="deleteAction()">УДАЛИТЬ</div>
-    </div>
 </div>
 <div class="bottom-container" onselectstart="return false">
-
-    <span style="padding-left: 15px">Время эксперимента: </span><span id="countTime"></span>
-    <br/>
-
     <div class="btnContainer">
         <div>
 
             <button class="powerBtn btn" onclick="startExperiment()">Начать эксперимент</button>
-<!--            <button class="powerBtn btn" onclick="savePattern()">Сохранить шаблон</button>-->
             <button class="powerBtn btn" onclick="">Показать все шаблоны</button>
 
         </div>
@@ -175,13 +140,9 @@
             <button class="constBtn btn" onclick="changeColor(this, 'orange')">Кормушка</button>
             <button class="constBtn btn" onclick="changeColor(this, 'green')">Вход</button>
             <button class="constBtn btn" onclick="changeColor(this, 'lightblue')">Выход</button>
-            <button class="constBtn btn" onclick="positionStart()">Начальная позиция</button>
             <button class="constBtn btn" id='mazeBuildLetterAdd' onclick="addLetter()">Добавить контрольную точку</button>
         </div>
     </div>
         <br/>
-    <label>
-        <textarea class="actions" value=""></textarea>
-    </label>
 
 </div>
