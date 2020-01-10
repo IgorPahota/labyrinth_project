@@ -2,7 +2,9 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const labSchema = new Schema({
-    name: String,
+    experimentName: String,
+    experimentNumber: Number,
+    mouseNumber: Number,
     dateOfCreation: {type: String, default: new Date()},
     field: {
         type: Array, default: [

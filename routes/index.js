@@ -6,18 +6,20 @@ const router = express.Router();
 
 
 // Seeder
-router.get('/', (req, res) => {
-    let testField = new Lab ({
-        name: 'testing'
-    });
-    testField.save();
-    res.send('seed done')
-});
+// router.get('/', (req, res) => {
+//     let testField = new Lab ({
+//         name: 'testing'
+//     });
+//     testField.save();
+//     res.send('seed done')
+// });
 
 router.post('/', async (req, res) => {
     // console.log(req.body.savedField)
     let newField = new Lab ({
-        name: req.body.savedField.name,
+        experimentName: req.body.savedField.experimentName,
+        experimentNumber: req.body.savedField.experimentNumber,
+        mouseNumber: req.body.savedField.mouseNumber,
         dateOfCreation: req.body.savedField.dateOfCreation,
         field: req.body.savedField.field
     })
@@ -47,7 +49,7 @@ router.get('/experiment/:id', async (req, res) =>{
         k = test.field[10]
     console.log(a)
      // await res.send(a, b, c, d, e, f, g, h, i, j, k)
-    await res.render('current', {a, b, c, d, e, f, g, h, i, j, k})
+    await res.render('current', {a, b, c, d, e, f, g, h, i, j, k, test})
 })
 
 router.get('/field', async (req, res) => {
