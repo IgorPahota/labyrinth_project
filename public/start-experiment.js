@@ -10,11 +10,12 @@ let savedField = {
      for (let i = 0; i < 11; i++) {
          for (let j = 0; j <= 10; j++) {
              let color = document.getElementById(`111`).children[i].children[j].getAttribute('dataColor');
-             let letter = document.getElementById(`111`).children[i].children[j].innerHTML
+             let letter = document.getElementById(`111`).children[i].children[j].getAttribute('letter')
              let mouse = document.getElementById(`111`).children[i].children[j].getAttribute('dataMouse');
              let column = document.getElementById(`111`).children[i].children[j].getAttribute('dataColumn');
              let row = document.getElementById(`111`).children[i].children[j].getAttribute('dataRow');
              let id = document.getElementById(`111`).children[i].children[j].getAttribute('id')
+             let inner = document.getElementById(`111`).children[i].children[j].innerHTML
              savedField.field[i].push(
                  {
                      color,
@@ -22,7 +23,8 @@ let savedField = {
                      mouse,
                      column,
                      row,
-                     id
+                     id,
+                     inner
                  }
 
              )

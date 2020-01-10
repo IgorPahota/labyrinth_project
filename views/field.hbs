@@ -17,7 +17,7 @@
                              onselectstart="return false" onmousedown="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
-                             dataColumn="{{this.column.default}}">{{this.id.default}}</div>
+                             dataColumn="{{this.column.default}}" letter="{{this.letter.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
                 <div id="2" class="column">
@@ -27,7 +27,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
-                             dataColumn="{{this.column.default}}">{{this.id.default}}</div>
+                             dataColumn="{{this.column.default}}" letter="{{this.letter.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
                 <div id="3" class="column">
@@ -37,7 +37,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
-                             dataColumn="{{this.column.default}}">{{this.id.default}}</div>
+                             dataColumn="{{this.column.default}}" letter="{{this.letter.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
                 <div id="4" class="column">
@@ -47,7 +47,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
-                             dataColumn="{{this.column.default}}">{{this.id.default}}</div>
+                             dataColumn="{{this.column.default}}" letter="{{this.letter.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
                 <div id="5" class="column">
@@ -57,7 +57,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
-                             dataColumn="{{this.column.default}}">{{this.id.default}}</div>
+                             dataColumn="{{this.column.default}}" letter="{{this.letter.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
                 <div id="6" class="column">
@@ -67,7 +67,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
-                             dataColumn="{{this.column.default}}">{{this.id.default}}</div>
+                             dataColumn="{{this.column.default}}" letter="{{this.letter.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
                 <div id="7" class="column">
@@ -77,7 +77,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
-                             dataColumn="{{this.column.default}}">{{this.id.default}}</div>
+                             dataColumn="{{this.column.default}}" letter="{{this.letter.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
                 <div id="8" class="column">
@@ -87,7 +87,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
-                             dataColumn="{{this.column.default}}">{{this.id.default}}</div>
+                             dataColumn="{{this.column.default}}" letter="{{this.letter.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
                 <div id="9" class="column">
@@ -97,7 +97,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
-                             dataColumn="{{this.column.default}}">{{this.id.default}}</div>
+                             dataColumn="{{this.column.default}}" letter="{{this.letter.default}}">{{this.id.default}}</div>
 
                     {{/each}}
                 </div>
@@ -108,7 +108,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
-                             dataColumn="{{this.column.default}}">{{this.id.default}}</div>
+                             dataColumn="{{this.column.default}}" letter="{{this.letter.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
                 <div id="11" class="column">
@@ -118,7 +118,7 @@
                              onselectstart="return false"
                              style="background-color: {{this.color.default}}" dataMouse="{{this.mouse.default}}"
                              dataColor="{{this.color.default}}" dataRow="{{this.row.default}}"
-                             dataColumn="{{this.column.default}}">{{this.id.default}}</div>
+                             dataColumn="{{this.column.default}}" letter="{{this.letter.default}}">{{this.id.default}}</div>
                     {{/each}}
                 </div>
             </div>
@@ -164,7 +164,7 @@
         <div>
 
             <button class="powerBtn btn" onclick="startExperiment()">Начать эксперимент</button>
-            <button class="powerBtn btn" onclick="">Сохранить шаблон</button>
+            <button class="powerBtn btn" onclick="savePattern()">Сохранить шаблон</button>
             <button class="powerBtn btn" onclick="">Показать все шаблоны</button>
 
         </div>

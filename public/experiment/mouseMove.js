@@ -19,7 +19,10 @@ document.addEventListener('keydown', (e) => {
                 nextCell.style.backgroundColor = 'black';
                 if (mouse.attributes.letter) {
                     document.querySelector('.actions').value += mouse.attributes.letter.value;
+                    let newAction = mouse.attributes.letter.value;
+                    protocol.push([count, newAction])
                 }
+                console.log(protocol)
                 break;
             } else {
                 break
@@ -37,7 +40,10 @@ document.addEventListener('keydown', (e) => {
                 nextCell.style.backgroundColor = 'black';
                 if (mouse.attributes.letter) {
                     document.querySelector('.actions').value += mouse.attributes.letter.value;
+                    let newAction = mouse.attributes.letter.value;
+                    protocol.push([count, newAction])
                 }
+                console.log(protocol)
                 break;
             } else {
                 break
@@ -54,7 +60,10 @@ document.addEventListener('keydown', (e) => {
                 nextCell.style.backgroundColor = 'black';
                 if (mouse.attributes.letter) {
                     document.querySelector('.actions').value += mouse.attributes.letter.value;
+                    let newAction = mouse.attributes.letter.value;
+                    protocol.push([count, newAction])
                 }
+                console.log(protocol)
                 break;
             } else {
                 break
@@ -71,7 +80,10 @@ document.addEventListener('keydown', (e) => {
                 nextCell.style.backgroundColor = 'black';
                 if (mouse.attributes.letter) {
                     document.querySelector('.actions').value += mouse.attributes.letter.value;
+                    let newAction = mouse.attributes.letter.value;
+                    protocol.push([count, newAction])
                 }
+                console.log(protocol)
                 break;
             } else {
                 break
