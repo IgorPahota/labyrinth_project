@@ -20,7 +20,7 @@ document.addEventListener('keydown', (e) => {
                 if (mouse.attributes.letter) {
                     document.querySelector('.actions').value += mouse.attributes.letter.value;
                     let newAction = mouse.attributes.letter.value;
-                    protocol.push([count, newAction])
+                    protocol[1].push([count, newAction])
                 }
                 console.log(protocol)
                 break;
@@ -41,7 +41,7 @@ document.addEventListener('keydown', (e) => {
                 if (mouse.attributes.letter) {
                     document.querySelector('.actions').value += mouse.attributes.letter.value;
                     let newAction = mouse.attributes.letter.value;
-                    protocol.push([count, newAction])
+                    protocol[1].push([count, newAction])
                 }
                 console.log(protocol)
                 break;
@@ -61,7 +61,7 @@ document.addEventListener('keydown', (e) => {
                 if (mouse.attributes.letter) {
                     document.querySelector('.actions').value += mouse.attributes.letter.value;
                     let newAction = mouse.attributes.letter.value;
-                    protocol.push([count, newAction])
+                    protocol[1].push([count, newAction])
                 }
                 console.log(protocol)
                 break;
@@ -81,7 +81,7 @@ document.addEventListener('keydown', (e) => {
                 if (mouse.attributes.letter) {
                     document.querySelector('.actions').value += mouse.attributes.letter.value;
                     let newAction = mouse.attributes.letter.value;
-                    protocol.push([count, newAction])
+                    protocol[1].push([count, newAction])
                 }
                 console.log(protocol)
                 break;

@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require('mongoose');
 const Lab = require('../models/labyrinth');
 const router = express.Router();
+const fs = require('fs')
 
 
 
@@ -29,6 +30,25 @@ router.post('/', async (req, res) => {
 
 })
 
+router.post('/experiment', async (req, res) => {
+    let currentExperiment = await Lab.findOne({_id:req.body.protocol[0]})
+    // let resultArray = currentExperiment._update.result;
+    currentExperiment.result = req.body.protocol[1]
+    await currentExperiment.save()
+    console.log(currentExperiment)
+    // resultArray.map(element=>{
+    //     let firstElement = element[0].toString()
+    //     let secondElement = element[1].toString()
+    //     // let oneElement = element.toString()
+    //     fs.appendFileSync('./public/new.txt', `\n${firstElement};${secondElement}`)
+    // })
+
+
+        // fs.writeFileSync('./public/new.txt', resultArray);
+
+    res.end()
+})
+
 router.get('/experiment/:id', async (req, res) =>{
     let id = req.params.id
     let test = await Lab.findOne({_id:id})
@@ -44,6 +64,17 @@ router.get('/experiment/:id', async (req, res) =>{
         j = test.field[9],
         k = test.field[10]
     await res.render('current', {a, b, c, d, e, f, g, h, i, j, k, test})
+})
+
+router.get('/experiment/:id/result', async (req, res) => {
+    // console.log(req.params.id)
+    let currentExperiment = Lab.findOne({_id:req.params.id})
+    // let resultArray = currentExperiment._update;
+    // console.log(currentExperiment)
+
+
+    res.end()
+
 })
 
 router.get('/field', async (req, res) => {
@@ -64,6 +95,7 @@ router.get('/field', async (req, res) => {
 
 router.get('/protocol', async (req, res) => {
     res.render('protocol')
+
 });
 
 router.get('/experiments', async (req,res) => {
