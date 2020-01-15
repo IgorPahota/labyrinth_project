@@ -1,0 +1,11 @@
+.resultTitle {
+    display: flex;
+    flex-direction: row;
+    color: red;
+}
+
+.resultText {
+    width: 150px;
+    font-family: Arial;
+    color: red;
+}

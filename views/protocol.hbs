@@ -1,1 +1,22 @@
 <img src="logo.png">
+<div>
+    <div class="resultTitle"><div class="resultText">дата:</div><div>{{this.currentExperiment.dateOfCreation}}</div></div>
+    <div class="resultTitle"><div class="resultText">название эксперимента:</div><div>{{this.currentExperiment.experimentName}}</div> </div>
+    <div class="resultTitle"><div class="resultText">номер эксперимента:</div><div>{{this.currentExperiment.experimentNumber}}</div> </div>
+    <div class="resultTitle"><div class="resultText">номер подопытного:</div><div{{this.currentExperiment.mouseNumber}}</p></div>
+    <table>
+        <tr>
+            <td>Время</td>
+            <td>Действие</td>
+        </tr>
+        {{#each this.currentExperiment.result}}
+            <tr>
+                <td>{{this.[0]}}</td>
+                <td>{{this.[1]}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</div>
+
+
+<button>Выгрузить результат</button>

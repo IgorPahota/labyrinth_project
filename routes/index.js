@@ -93,11 +93,11 @@ router.get('/experiment/:id/result', async (req, res) => {
 
     let currentExperiment = await Lab.findOne({_id:req.params.id});
     // let resultArray = currentExperiment._update;
-    console.log(currentExperiment)
+    console.log(currentExperiment.result)
 
 
 
-    res.end()
+    res.render('protocol', {currentExperiment})
 
 })
 
