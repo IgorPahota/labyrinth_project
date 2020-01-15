@@ -6,13 +6,17 @@ const router = express.Router();
 
 
 // Seeder
-router.get('/', (req, res) => {
+router.get('/seed', (req, res) => {
     let testField = new Lab ({
         name: 'main'
     });
     testField.save();
     res.send('seed done')
 });
+
+router.get('/', async (req, res) => {
+    res.redirect('/field')
+})
 
 router.post('/', async (req, res) => {
     let newField = new Lab ({
@@ -25,8 +29,6 @@ router.post('/', async (req, res) => {
    await newField.save()
     let currentField = await Lab.findOne({dateOfCreation: req.body.savedField.dateOfCreation})
     res.json(currentField._id)
-
-
 })
 
 router.get('/experiment/:id', async (req, res) =>{
