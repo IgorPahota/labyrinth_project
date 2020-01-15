@@ -4,13 +4,13 @@ document.querySelector('.keyboard').addEventListener('click', function (event) {
     function singleClick() {
         document.querySelector('.actions').value += event.target.parentElement.firstChild.innerText;
         let newAction = event.target.parentElement.firstChild.innerText;
-        protocol.push([count, newAction])
+        protocol[1].push([count, newAction])
     }
 
     function doubleClick() {
         document.querySelector('.actions').value += event.target.parentElement.lastChild.innerText;
         let newAction = event.target.parentElement.lastChild.innerText;
-        protocol.push([count, newAction])
+        protocol[1].push([count, newAction])
     }
 
     clickCount++;

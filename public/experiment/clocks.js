@@ -37,9 +37,10 @@ function timeCount() {
 function startCount() {
     if (!timer)
         timeCount();
-    protocol.push(document.querySelector('#experimentName').value);
-    protocol.push(document.querySelector('#experimentNumber').value);
-    protocol.push(document.querySelector('#mouseNumber').value);
+    // protocol[3].push(document.querySelector('#experimentName').placeholder);
+    // protocol[3].push(document.querySelector('#experimentNumber').placeholder);
+    // protocol[3].push(document.querySelector('#mouseNumber').placeholder);
+
 }
 
 function stopCount() {
