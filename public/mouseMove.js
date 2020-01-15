@@ -24,6 +24,7 @@ document.addEventListener('keydown', (e) => {
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break
@@ -39,6 +40,7 @@ document.addEventListener('keydown', (e) => {
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break
@@ -53,6 +55,7 @@ document.addEventListener('keydown', (e) => {
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break
@@ -67,6 +70,7 @@ document.addEventListener('keydown', (e) => {
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break

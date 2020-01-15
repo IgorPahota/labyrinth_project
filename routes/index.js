@@ -15,6 +15,7 @@ router.get('/seed', (req, res) => {
     res.send('seed done')
 });
 
+
 router.get('/', async (req, res) => {
     res.redirect('/field')
 })
@@ -51,6 +52,25 @@ router.post('/experiment', async (req, res) => {
     res.end()
 })
 
+router.post('/experiment', async (req, res) => {
+    let currentExperiment = await Lab.findOne({_id:req.body.protocol[0]})
+    // let resultArray = currentExperiment._update.result;
+    currentExperiment.result = req.body.protocol[1]
+    await currentExperiment.save()
+    // console.log(currentExperiment)
+    // resultArray.map(element=>{
+    //     let firstElement = element[0].toString()
+    //     let secondElement = element[1].toString()
+    //     // let oneElement = element.toString()
+    //     fs.appendFileSync('./public/new.txt', `\n${firstElement};${secondElement}`)
+    // })
+
+
+        // fs.writeFileSync('./public/new.txt', resultArray);
+
+    res.end()
+})
+
 router.get('/experiment/:id', async (req, res) =>{
     let id = req.params.id
     let test = await Lab.findOne({_id:id})
@@ -70,9 +90,11 @@ router.get('/experiment/:id', async (req, res) =>{
 
 router.get('/experiment/:id/result', async (req, res) => {
     // console.log(req.params.id)
-    let currentExperiment = Lab.findOne({_id:req.params.id})
+
+    let currentExperiment = await Lab.findOne({_id:req.params.id});
     // let resultArray = currentExperiment._update;
-    // console.log(currentExperiment)
+    console.log(currentExperiment)
+
 
 
     res.end()

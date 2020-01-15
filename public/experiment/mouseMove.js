@@ -24,6 +24,7 @@ document.addEventListener('keydown', (e) => {
                 }
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break
@@ -46,6 +47,7 @@ document.addEventListener('keydown', (e) => {
                 }
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break
@@ -67,6 +69,7 @@ document.addEventListener('keydown', (e) => {
                 }
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break
@@ -88,6 +91,7 @@ document.addEventListener('keydown', (e) => {
                 }
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break
