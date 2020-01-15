@@ -38,7 +38,7 @@ router.post('/experiment', async (req, res) => {
     // let resultArray = currentExperiment._update.result;
     currentExperiment.result = req.body.protocol[1]
     await currentExperiment.save()
-    console.log(currentExperiment)
+    // console.log(currentExperiment)
     // resultArray.map(element=>{
     //     let firstElement = element[0].toString()
     //     let secondElement = element[1].toString()
@@ -89,15 +89,28 @@ router.get('/experiment/:id', async (req, res) =>{
 })
 
 router.get('/experiment/:id/result', async (req, res) => {
+    fs.writeFileSync('./new.txt','')
     // console.log(req.params.id)
-
     let currentExperiment = await Lab.findOne({_id:req.params.id});
     // let resultArray = currentExperiment._update;
-    console.log(currentExperiment)
+    console.log(currentExperiment.result)
+    let test = '123'
+    let file = `./new.txt`
 
+    //file writing
 
+    currentExperiment.result.map((element)=>{
+        console.log(element[0])
+        let time = element[0];
+        let letter = element[1];
+        fs.appendFileSync('./new.txt',`\n${time}:${letter}`)
+    })
+    // res.end()
 
-    res.end()
+    // res.render('protocol',{currentExperiment})
+    // res.setHeader('Content-disposition', `striing; filename=${test}.txt`);
+    res.download(file)
+    // fs.writeFileSync('./new.txt','');
 
 })
 
