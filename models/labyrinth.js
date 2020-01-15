@@ -6,6 +6,7 @@ const labSchema = new Schema({
     experimentNumber: Number,
     mouseNumber: Number,
     dateOfCreation: {type: String, default: new Date()},
+    result: Array,
     field: {
         type: Array, default: [
             [

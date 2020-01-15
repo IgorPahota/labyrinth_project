@@ -42,7 +42,25 @@ function deleteAction() {
     actionInput[0].value = actionInput[0].value.slice(0,-1);
 }
 
-let protocol = [];
+let protocol = [[],[]];
 
+async function protocolSend () {
+    let idArr = window.location.pathname.split('/')
+    let id = idArr[2];
+    protocol[0].push(id)
+    const response = await fetch ('/experiment', {
+        method: 'POST',
+        headers: {'content-type': 'application/json'},
+        body: JSON.stringify({protocol})
+    });
+
+}
+
+function redirect() {
+    let idArr = window.location.pathname.split('/')
+    let id = idArr[2];
+    console.log(id);
+    location.assign(`/experiment/${id}/result`)
+}
 
 
