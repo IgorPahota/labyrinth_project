@@ -1,5 +1,12 @@
 document.addEventListener('keydown', (e) => {
     let mouse = document.querySelector('[dataMouse=true]');
+    if (mouse.attributes.letter) {
+        console.log('mouse.attributes.letter.value');
+        document.querySelector('.actions').value += mouse.attributes.letter.value;
+
+        let newAction = mouse.attributes.letter.value;
+        protocol[1].push([count, newAction])
+    }
     let prevColor = mouse.attributes.dataColor.value;
     mouse.style.backgroundColor = 'black';
     let moveColumn;
@@ -17,12 +24,7 @@ document.addEventListener('keydown', (e) => {
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
-                if (mouse.attributes.letter) {
-                    document.querySelector('.actions').value += mouse.attributes.letter.value;
-                    let newAction = mouse.attributes.letter.value;
-                    protocol[1].push([count, newAction])
-                }
-                console.log(protocol)
+
                 break;
             } else {
                 break
@@ -38,12 +40,7 @@ document.addEventListener('keydown', (e) => {
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
-                if (mouse.attributes.letter) {
-                    document.querySelector('.actions').value += mouse.attributes.letter.value;
-                    let newAction = mouse.attributes.letter.value;
-                    protocol[1].push([count, newAction])
-                }
-                console.log(protocol)
+
                 break;
             } else {
                 break
@@ -58,12 +55,7 @@ document.addEventListener('keydown', (e) => {
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
-                if (mouse.attributes.letter) {
-                    document.querySelector('.actions').value += mouse.attributes.letter.value;
-                    let newAction = mouse.attributes.letter.value;
-                    protocol[1].push([count, newAction])
-                }
-                console.log(protocol)
+
                 break;
             } else {
                 break
@@ -78,12 +70,7 @@ document.addEventListener('keydown', (e) => {
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
                 nextCell.setAttribute('dataMouse', true);
                 nextCell.style.backgroundColor = 'black';
-                if (mouse.attributes.letter) {
-                    document.querySelector('.actions').value += mouse.attributes.letter.value;
-                    let newAction = mouse.attributes.letter.value;
-                    protocol[1].push([count, newAction])
-                }
-                console.log(protocol)
+
                 break;
             } else {
                 break

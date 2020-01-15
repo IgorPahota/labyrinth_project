@@ -15,14 +15,16 @@ document.addEventListener('keydown', (e) => {
                 mouse.setAttribute('dataMouse', 'false');
 
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
-                nextCell.setAttribute('dataMouse', true);
-                nextCell.style.backgroundColor = 'black';
-                if (mouse.attributes.letter) {
-                    document.querySelector('.actions').value += mouse.attributes.letter.value;
-                    let newAction = mouse.attributes.letter.value;
+                if (nextCell.attributes.letter.value) {
+                    console.log(mouse.attributes.letter.value);
+                    document.querySelector('.actions').value += nextCell.attributes.letter.value;
+
+                    let newAction = nextCell.attributes.letter.value;
                     protocol[1].push([count, newAction])
                 }
-                console.log(protocol)
+                nextCell.setAttribute('dataMouse', true);
+                nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break
@@ -36,14 +38,16 @@ document.addEventListener('keydown', (e) => {
                 mouse.setAttribute('dataMouse', 'false');
 
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
-                nextCell.setAttribute('dataMouse', true);
-                nextCell.style.backgroundColor = 'black';
-                if (mouse.attributes.letter) {
-                    document.querySelector('.actions').value += mouse.attributes.letter.value;
-                    let newAction = mouse.attributes.letter.value;
+                if (nextCell.attributes.letter.value) {
+                    console.log(mouse.attributes.letter.value);
+                    document.querySelector('.actions').value += nextCell.attributes.letter.value;
+
+                    let newAction = nextCell.attributes.letter.value;
                     protocol[1].push([count, newAction])
                 }
-                console.log(protocol)
+                nextCell.setAttribute('dataMouse', true);
+                nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break
@@ -56,14 +60,16 @@ document.addEventListener('keydown', (e) => {
                 mouse.setAttribute('dataMouse', 'false');
 
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
-                nextCell.setAttribute('dataMouse', true);
-                nextCell.style.backgroundColor = 'black';
-                if (mouse.attributes.letter) {
-                    document.querySelector('.actions').value += mouse.attributes.letter.value;
-                    let newAction = mouse.attributes.letter.value;
+                if (nextCell.attributes.letter.value) {
+                    console.log(mouse.attributes.letter.value);
+                    document.querySelector('.actions').value += nextCell.attributes.letter.value;
+
+                    let newAction = nextCell.attributes.letter.value;
                     protocol[1].push([count, newAction])
                 }
-                console.log(protocol)
+                nextCell.setAttribute('dataMouse', true);
+                nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break
@@ -76,14 +82,16 @@ document.addEventListener('keydown', (e) => {
                 mouse.setAttribute('dataMouse', 'false');
 
                 nextCell = document.querySelector(`div[dataRow="${moveRow}"][dataColumn="${moveColumn}"]`);
-                nextCell.setAttribute('dataMouse', true);
-                nextCell.style.backgroundColor = 'black';
-                if (mouse.attributes.letter) {
-                    document.querySelector('.actions').value += mouse.attributes.letter.value;
-                    let newAction = mouse.attributes.letter.value;
+                if (nextCell.attributes.letter.value) {
+                    console.log(mouse.attributes.letter.value);
+                    document.querySelector('.actions').value += nextCell.attributes.letter.value;
+
+                    let newAction = nextCell.attributes.letter.value;
                     protocol[1].push([count, newAction])
                 }
-                console.log(protocol)
+                nextCell.setAttribute('dataMouse', true);
+                nextCell.style.backgroundColor = 'black';
+
                 break;
             } else {
                 break
