@@ -1,0 +1,174 @@
+<div id="header">
+    <div id="inputBox">
+        <input class="topInput" id="experimentName" placeholder="{{test.experimentName}}" readonly>
+        <input class="topInput" id="experimentNumber" placeholder="{{test.experimentNumber}}" readonly>
+        <input class="topInput" id="mouseNumber" placeholder="{{test.mouseNumber}}" readonly>
+    </div>
+    <img src="logo.png">
+</div>
+<div class="top-container">
+    <div class="field-container">
+        <div class="field">
+            <div id='111' class="row">
+                <div id="1" class="column">
+                    {{#each a}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false" onmousedown="return false"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}" letter="{{this.letter}}" id="{{this.id}}">{{this.inner}}</div>
+                    {{/each}}
+                </div>
+                <div id="2" class="column">
+                    {{#each b}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}" letter="{{this.letter}}" id="{{this.id}}">{{this.inner}}</div>
+                    {{/each}}
+                </div>
+                <div id="3" class="column">
+                    {{#each c}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}" letter="{{this.letter}}" id="{{this.id}}">{{this.inner}}</div>
+                    {{/each}}
+                </div>
+                <div id="4" class="column">
+                    {{#each d}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}" letter="{{this.letter}}" id="{{this.id}}">{{this.inner}}</div>
+                    {{/each}}
+                </div>
+                <div id="5" class="column">
+                    {{#each e}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}" letter="{{this.letter}}" id="{{this.id}}">{{this.inner}}</div>
+                    {{/each}}
+                </div>
+                <div id="6" class="column">
+                    {{#each f}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}" letter="{{this.letter}}" id="{{this.id}}">{{this.inner}}</div>
+                    {{/each}}
+                </div>
+                <div id="7" class="column">
+                    {{#each g}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}" letter="{{this.letter}}" id="{{this.id}}">{{this.inner}}</div>
+                    {{/each}}
+                </div>
+                <div id="8" class="column">
+                    {{#each h}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}" letter="{{this.letter}}" id="{{this.id}}">{{this.inner}}</div>
+                    {{/each}}
+                </div>
+                <div id="9" class="column">
+                    {{#each i}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}" letter="{{this.letter}}" id="{{this.id}}">{{this.inner}}</div>
+
+                    {{/each}}
+                </div>
+                <div id="10" class="column">
+                    {{#each j}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}" letter="{{this.letter}}" id="{{this.id}}">{{this.inner}}</div>
+                    {{/each}}
+                </div>
+                <div id="11" class="column">
+                    {{#each k}}
+                        <div class="cell" onmousedown="colorClick(this)"
+                             onselectstart="return false"
+                             style="background-color: {{this.color}}" dataMouse="{{this.mouse}}"
+                             dataColor="{{this.color}}" dataRow="{{this.row}}"
+                             dataColumn="{{this.column}}" letter="{{this.letter}}" id="{{this.id}}">{{this.inner}}</div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="keyboard-container">
+        <div id="current_date_time_block2" style="margin: auto; padding-top: 0"></div>
+        <div class="keyboard" onselectstart="return false">
+            <div class="leftBtns">
+                <div class="smallBtnFld">
+                    <div class="btnRow">
+                        <div class="smallBtn" style="border-top-left-radius: 5px"><span class="ltb">t</span><span class="rbb">?</span></div>
+                        <div class="smallBtn"><span class="ltb">h</span><span class="rbb">_</span></div>
+                        <div class="smallBtn"><span class="ltb">o</span><span class="rbb">i</span></div>
+                    </div>
+                    <div class="btnRow">
+                        <div class="smallBtn"><span class="ltb">j</span><span class="rbb">q</span></div>
+                        <div class="smallBtn"><span class="ltb">╎</span><span class="rbb">b</span></div>
+                        <div class="smallBtn"><span class="ltb">s</span><span class="rbb">l</span></div>
+                    </div>
+                    <div class="btnRow">
+                        <div class="smallBtn"><span class="ltb">e</span><span class="rbb">x</span></div>
+                        <div class="smallBtn"><span class="ltb">w</span><span class="rbb">z</span></div>
+                        <div class="smallBtn"><span class="ltb">r</span><span class="rbb">m</span></div>
+                    </div>
+                </div>
+                <div class="btnRow">
+                    <div class="wideBtn" style="border-bottom-left-radius: 5px"><div class="wltb">y</div><div class="wrbb">d</div></div>
+                    <div class="smallBtn"><span class="ltb">k</span><span class="rbb">g</span></div>
+                </div>
+            </div>
+            <div class="longBtn" style="border-bottom-right-radius: 5px; border-top-right-radius: 5px"><div class="lltb">++</div><div class="lrbb">a</div></div>
+        </div>
+        <div id="deleteButton">УДАЛИТЬ</div>
+    </div>
+</div>
+<div class="bottom-container">
+
+    <span style="padding-left: 15px">Время эксперимента: </span><span id="countTime"></span>
+    <br/>
+
+    <div class="btnContainer">
+        <div>
+            <button class="powerBtn powerBtn1 btn" onclick="startCount()" style="margin-top: 10px">Начать эксперимент</button>
+            <br/>
+            <button class="powerBtn btn" onclick="stopCount(); protocolSend(); redirect()">Закончить эксперимент</button>
+            <br/>
+        </div>
+        <div class="constBtns">
+            <button class="constBtn btn" onclick="changeColor(this, 'lightgrey')">Поле</button>
+            <button class="constBtn btn" onclick="changeColor(this, 'darkblue')">Стена</button>
+            <button class="constBtn btn" onclick="changeColor(this, 'violet')">Ложная кормушка</button>
+            <button class="constBtn btn" onclick="changeColor(this, 'orange')">Кормушка</button>
+            <button class="constBtn btn" onclick="changeColor(this, 'green')">Вход</button>
+            <button class="constBtn btn" onclick="changeColor(this, 'lightblue')">Выход</button>
+            <button class="constBtn btn" onclick="positionStart()">Начальная позиция</button>
+        </div>
+    </div>
+    <br/>
+    <label>
+        <textarea class="actions" value=""></textarea>
+    </label>
+
+</div>

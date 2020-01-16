@@ -1,0 +1,130 @@
+.keyboard-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 5%;
+    flex-direction: column;
+}
+
+.smallBtn {
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.smallBtn:active {
+    background-color: gray;
+}
+
+.wideBtn {
+    width: 100px;
+    height: 50px;
+    background-color: lightgray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.wideBtn:active {
+    background-color: gray;
+}
+
+.longBtn {
+    width: 55px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.longBtn:active {
+    background-color: gray;
+}
+
+.btnRow {
+    display: inline-flex;
+}
+
+.smallBtnFld {
+    display: flex;
+    flex-direction: column;
+    z-index: 2000;
+}
+
+.keyboard {
+    font-size: 20px;
+    height: 200px;
+    width: 200px;
+    display: inline-flex;
+    box-sizing: border-box;
+    background-color: lightgray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: auto;
+    font-family: arial;
+    border-radius: 5px;
+}
+
+.keyboard:hover {
+    cursor: pointer;
+}
+
+.ltb {
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+.rbb {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.wltb {
+    height: 50%;
+    padding-left: 15px;
+}
+
+.wrbb {
+    height: 50%;
+    padding-left: 70px;
+}
+
+.lltb {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.lrbb {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+#deleteButton {
+    width: 150px;
+    height: 50px;
+    background-color: lightgray;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 5px;
+}
+
+#deleteButton:hover {
+    cursor: pointer;
+}
+
+#deleteButton:active {
+    background-color: gray;
+}

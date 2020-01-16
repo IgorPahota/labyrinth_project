@@ -1,0 +1,62 @@
+#title {
+    padding-top: 90px;
+    padding-left: 100px;
+    font-size: 30px;
+}
+
+.link {
+    font-size: 20px;
+    color: dimgrey;
+    text-decoration: none;
+}
+
+.selectHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    background-color: whitesmoke;
+    padding-top: 30px;
+}
+
+.selectContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    outline: 0 !important;
+
+}
+
+.selectBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 600px;
+    height: 160px;
+    border: 0;
+    background-color: gainsboro;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin-top: 30px;
+    padding-left: 30px;
+    outline: 0 !important;
+}
+
+.selectBtn {
+    width: 80px;
+    height: 40px;
+    background-color: lightgray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-size: 16px;
+    outline: 0 !important;
+    border-radius: 10px;
+}
+
+.selectBtn:hover {
+    cursor: pointer;
+}
+
+.selectBtn:active {
+    background-color: gray;
+}

@@ -1,0 +1,143 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.topInput {
+    width: 500px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: 0px;
+    margin: 5px;
+    outline: 0 !important;
+}
+
+#inputBox {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+body {
+    font-family: Arial;
+    background-color: gainsboro;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.field {
+    display: inline-flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.field:hover {
+    cursor: pointer;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 2px;
+    font-family: Arial;
+}
+
+.field-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+.bottom-container {
+    background-color: whitesmoke;
+    padding: 15px;
+}
+
+.constBtns {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    /*padding: 5px;*/
+    justify-content: center;
+}
+
+.constBtns .btn{
+    background-color: lightgray;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.actions {
+    border: 0;
+    margin: 15px 5px;
+    width: 95%;
+    font-size: 20px;
+    background-color: whitesmoke;
+    outline: 0 !important;
+}
+
+.powerBtn {
+    font-size: 18px;
+    width: 230px;
+    height: 50px;
+    background-color: lightgray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    outline: 0 !important;
+}
+
+.powerBtn:active {
+    background-color: gray;
+}
+
+#countTime {
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+#current_date_time_block2 {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.constBtn {
+    height: 40px;
+    font-size: 14px;
+    background-color: lightgray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    outline: 0 !important;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+}

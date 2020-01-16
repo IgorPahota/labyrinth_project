@@ -1,0 +1,23 @@
+<div class="selectHeader">
+    <a class="link" href="/field">К лабиринту</a>
+    <span id="title">Выберите эксперимент</span>
+    <img src="logo.png">
+</div>
+
+<div class="selectContainer">
+    {{#each allFields}}
+        <div class="selectBox">
+        <div>{{this.experimentName}}</div>
+        <div>{{this.experimentNumber}}</div>
+        <div>{{this.mouseNumber}}</div>
+        <div>{{this.dateOfCreation}}</div>
+            <div>
+                <button class="selectBtn">Выбрать</button>
+                <button class="selectBtn">Удалить</button>
+            </div>
+
+        </div>
+
+    {{/each}}
+</div>
+
