@@ -93,21 +93,15 @@ router.get('/experiment/:id/result', async (req, res) => {
     let currentExperiment = await Lab.findOne({_id:req.params.id});
     console.log(currentExperiment.result)
     let file = `${__dirname}/../public/files/data.txt`
-
-    //file writing
-
+        //file writing
     currentExperiment.result.map((element)=>{
-        console.log(element[0])
         let time = element[0];
         let letter = element[1];
         fs.appendFileSync(`${__dirname}/../public/files/data.txt`,`\n${time}:${letter}`)
     })
 
-
-    // res.render('protocol',{currentExperiment})
-    // res.setHeader('Content-disposition', `striing; filename=${test}.txt`);
     res.download(file)
-    // fs.writeFileSync('./new.txt','');
+
 
 })
 

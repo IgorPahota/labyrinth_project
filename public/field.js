@@ -54,13 +54,8 @@ async function protocolSend () {
         body: JSON.stringify({protocol})
     });
 
-}
-
-function redirect() {
-    let idArr = window.location.pathname.split('/')
-    let id = idArr[2];
     location.assign(`/experiment/${id}/result`)
+
+
 }
-
-
 
