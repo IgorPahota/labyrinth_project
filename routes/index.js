@@ -89,10 +89,10 @@ router.get('/experiment/:id', async (req, res) =>{
 })
 
 router.get('/experiment/:id/result', async (req, res) => {
-    fs.writeFileSync(`${__dirname}/../public/files/new.txt`,'')
+    fs.writeFileSync(`${__dirname}/../public/files/data.txt`,'')
     let currentExperiment = await Lab.findOne({_id:req.params.id});
     console.log(currentExperiment.result)
-    let file = `./new.txt`
+    let file = `${__dirname}/../public/files/data.txt`
 
     //file writing
 
@@ -100,7 +100,7 @@ router.get('/experiment/:id/result', async (req, res) => {
         console.log(element[0])
         let time = element[0];
         let letter = element[1];
-        fs.appendFileSync(`${__dirname}/../public/files/new.txt`,`\n${time}:${letter}`)
+        fs.appendFileSync(`${__dirname}/../public/files/data.txt`,`\n${time}:${letter}`)
     })
 
 
